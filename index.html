@@ -1,1052 +1,1036 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="vi">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tien Coffee | Sân Vườn & Hồ Cá Koi — Đà Nẵng</title>
+    <meta name="description" content="Tien Coffee — ốc đảo xanh giữa Đà Nẵng với hồ cá koi, thác nước và cà phê đặc sản pha chế mỗi ngày. 46 Loseby, An Hải, Sơn Trà.">
+    <meta name="theme-color" content="#271714">
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Tien Coffee | Da Nang">
+    <meta property="og:description" content="A hidden green paradise with koi fish & waterfall — 46 Loseby, An Hải, Sơn Trà, Đà Nẵng.">
+    <meta property="og:url" content="https://tiencoffee.netlify.app">
+    <meta property="og:image" content="https://tiencoffee.netlify.app/.netlify/images?url=/drinks.jpg&fm=jpg&w=1200&h=630&fit=cover&q=80">
+    <meta property="og:locale" content="vi_VN">
+    <meta property="og:locale:alternate" content="en_US">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CafeOrCoffeeShop",
+        "name": "Tien Coffee",
+        "url": "https://tiencoffee.netlify.app",
+        "telephone": "+84342697551",
+        "priceRange": "₫10.000–₫45.000",
+        "servesCuisine": ["Coffee", "Vietnamese"],
+        "image": "https://tiencoffee.netlify.app/.netlify/images?url=/drinks.jpg&fm=jpg&w=1200&h=630&fit=cover&q=80",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "46 Loseby, An Hải",
+            "addressLocality": "Đà Nẵng",
+            "addressRegion": "Sơn Trà",
+            "addressCountry": "VN"
+        },
+        "hasMap": "https://maps.app.goo.gl/yjayDcvZRYSWKZA88",
+        "sameAs": [
+            "https://instagram.com/tien.coffee.shop",
+            "https://www.facebook.com/share/1DaXoe3VbJ/"
+        ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --accent-olive: #6B8E23;
+            --olive-dark: #556B2F;
+            --olive-soft: #EFF3E4;
+            --coffee-dark: #3E2723;
+            --coffee-black: #271714;
+            --bg-natural: #F5F2EB;
+            --white-card: #FFFFFF;
+            --text-muted: #6d5c58;
+            --line: #EAE6DD;
+            --radius: 20px;
+            --shadow-card: 0 6px 18px rgba(62, 39, 35, 0.06);
+            --shadow-hover: 0 14px 32px rgba(62, 39, 35, 0.12);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Be Vietnam Pro', 'Roboto', sans-serif;
+            color: var(--coffee-dark);
+            background-color: var(--bg-natural);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        /* subtle paper grain */
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            z-index: 1;
+            pointer-events: none;
+            opacity: 0.035;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+        }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; color: var(--coffee-dark); }
+        img, video { display: block; max-width: 100%; }
+        .icon { width: 1.15em; height: 1.15em; flex: none; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; vertical-align: -0.2em; }
+        .icon-filled { fill: currentColor; stroke: none; }
+        a:focus-visible, button:focus-visible { outline: 2px solid var(--accent-olive); outline-offset: 3px; border-radius: 4px; }
+
+        .container { width: 100%; padding: 0 20px; max-width: 1200px; margin: 0 auto; }
+        section { padding: 72px 0; border-bottom: 1px solid var(--line); }
+        @media (min-width: 720px) { section { padding: 88px 0; } }
+
+        /* Language visibility */
+        html[lang="en"] .lang-vi { display: none !important; }
+        html[lang="vi"] .lang-en { display: none !important; }
+
+        /* ===== Top navigation ===== */
+        .topbar {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            padding: 10px 20px;
+            background: rgba(39, 23, 20, 0.55);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+        .topbar.scrolled { background: rgba(39, 23, 20, 0.92); box-shadow: 0 4px 20px rgba(0,0,0,0.25); }
+        .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #fff; }
+        .brand img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; border: 1px solid rgba(255,255,255,0.35); }
+        .brand-name { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; letter-spacing: 0.5px; }
+        .topbar-nav { display: none; gap: 26px; }
+        .topbar-nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
+        .topbar-nav a:hover { color: #fff; }
+        .topbar-actions { display: flex; align-items: center; gap: 12px; }
+        .lang-switch { display: flex; gap: 6px; }
+        .lang-btn {
+            background: transparent; border: 1.5px solid rgba(255,255,255,0.4); color: #fff;
+            padding: 4px 12px; border-radius: 999px; cursor: pointer; font-size: 12.5px; font-weight: 700;
+            font-family: inherit; transition: all 0.2s;
+        }
+        .lang-btn.active { background-color: var(--accent-olive); border-color: var(--accent-olive); }
+        .topbar-call {
+            display: flex; align-items: center; justify-content: center;
+            width: 36px; height: 36px; border-radius: 50%;
+            background: var(--accent-olive); color: #fff; text-decoration: none;
+            transition: background 0.2s;
+        }
+        .topbar-call:hover { background: var(--olive-dark); }
+        @media (min-width: 860px) {
+            .topbar { padding: 12px 32px; }
+            .topbar-nav { display: flex; }
+        }
+
+        /* ===== Buttons ===== */
+        .btn {
+            display: flex; align-items: center; justify-content: center; gap: 10px;
+            background-color: var(--accent-olive); color: #ffffff;
+            padding: 15px 24px; font-weight: 600; text-decoration: none;
+            border-radius: 999px; font-size: 16px; font-family: inherit;
+            width: 100%; max-width: 340px; margin-left: auto; margin-right: auto;
+            border: none; cursor: pointer;
+            box-shadow: 0 8px 20px rgba(107, 142, 35, 0.28);
+            transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+        }
+        .btn:hover { background-color: var(--olive-dark); transform: translateY(-2px); box-shadow: 0 12px 26px rgba(107, 142, 35, 0.34); }
+        .btn-ghost {
+            display: inline-flex; align-items: center; gap: 8px;
+            border: 1.5px solid rgba(255,255,255,0.55); color: #fff;
+            padding: 10px 20px; border-radius: 999px; text-decoration: none;
+            font-size: 14px; font-weight: 600; transition: all 0.2s;
+            background: rgba(255,255,255,0.06);
+        }
+        .btn-ghost:hover { background: rgba(255,255,255,0.15); border-color: #fff; }
+
+        /* ===== Hero ===== */
+        .hero {
+            position: relative; text-align: center; color: #fff; overflow: hidden;
+            background-color: var(--coffee-black); min-height: 100svh;
+            display: flex; align-items: center; border-bottom: none;
+            padding: 96px 0 64px;
+        }
+        .hero-video-bg {
+            position: absolute; top: 50%; left: 50%;
+            min-width: 100%; min-height: 100%; width: auto; height: auto;
+            transform: translate(-50%, -50%); object-fit: cover; z-index: 1;
+        }
+        .hero-overlay {
+            position: absolute; inset: 0; z-index: 2;
+            background: linear-gradient(180deg, rgba(39,23,20,0.62) 0%, rgba(39,23,20,0.35) 45%, rgba(39,23,20,0.88) 100%);
+        }
+        .hero .container { position: relative; z-index: 3; max-width: 680px; }
+        .hero h1 {
+            color: #FFFFFF; font-size: clamp(44px, 8vw, 68px); font-weight: 800;
+            letter-spacing: -1px; line-height: 1.08; margin: 14px 0 10px;
+        }
+        .hero-tagline {
+            font-family: 'Playfair Display', serif; font-style: italic;
+            font-size: clamp(18px, 3vw, 22px); color: #E0DCD3; margin-bottom: 28px;
+        }
+        .hero-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 32px; }
+        .chip {
+            display: inline-flex; align-items: center; gap: 7px;
+            background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18);
+            color: #F5F2EB; font-size: 13.5px; font-weight: 500;
+            padding: 8px 16px; border-radius: 999px; backdrop-filter: blur(4px);
+        }
+        .chip .icon { color: #B9CE8A; }
+        .hero-info-box {
+            background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15);
+            border-radius: var(--radius); padding: 16px 20px; max-width: 420px; margin: 0 auto 24px;
+            backdrop-filter: blur(6px); text-align: left;
+        }
+        .hero-info-box a { display: flex; align-items: center; gap: 10px; color: #F5F2EB; text-decoration: none; font-size: 15px; font-weight: 500; }
+        .hero-info-box .icon { color: #B9CE8A; width: 1.3em; height: 1.3em; }
+        .hero-cta { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+        .scroll-cue {
+            position: absolute; bottom: 22px; left: 50%; transform: translateX(-50%);
+            z-index: 3; color: rgba(255,255,255,0.7); animation: bob 2.2s ease-in-out infinite;
+        }
+        @keyframes bob { 0%, 100% { transform: translate(-50%, 0); } 50% { transform: translate(-50%, 8px); } }
+
+        /* hero entrance */
+        .fade-item { opacity: 0; transform: translateY(22px); animation: rise 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+        .fade-item:nth-child(1) { animation-delay: 0.1s; }
+        .fade-item:nth-child(2) { animation-delay: 0.22s; }
+        .fade-item:nth-child(3) { animation-delay: 0.34s; }
+        .fade-item:nth-child(4) { animation-delay: 0.46s; }
+        .fade-item:nth-child(5) { animation-delay: 0.58s; }
+        .fade-item:nth-child(6) { animation-delay: 0.7s; }
+        @keyframes rise { to { opacity: 1; transform: translateY(0); } }
+
+        /* ===== Section headers ===== */
+        .section-title { font-size: clamp(28px, 4.5vw, 36px); text-align: center; font-weight: 700; }
+        .section-subtitle {
+            text-align: center; font-size: 13.5px; color: var(--accent-olive);
+            margin-bottom: 40px; text-transform: uppercase; font-weight: 700; letter-spacing: 1.5px;
+        }
+        .section-subtitle a { color: inherit; text-decoration: none; }
+        .section-subtitle a:hover { text-decoration: underline; }
+
+        /* ===== Signature drinks ===== */
+        .drinks-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 22px; }
+        .drink-card {
+            background: var(--white-card); border-radius: var(--radius); overflow: hidden;
+            border: 1px solid var(--line); box-shadow: var(--shadow-card);
+            display: flex; flex-direction: column; transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .drink-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); }
+        .drink-card img { width: 100%; height: 240px; object-fit: cover; }
+        .drink-info {
+            padding: 16px; text-align: center; font-size: 15px; font-weight: 600;
+            border-top: 1px solid var(--bg-natural); display: flex; flex-direction: column;
+        }
+        .drink-info small { font-size: 12px; color: var(--text-muted); font-weight: 500; margin-top: 3px; }
+
+        /* ===== Atmosphere ===== */
+        .atmosphere-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+        @media (max-width: 640px) { .atmosphere-grid { grid-template-columns: 1fr; } }
+        .atmo-card {
+            background: var(--white-card); border-radius: var(--radius); overflow: hidden;
+            border: 1px solid var(--line); box-shadow: var(--shadow-card); transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .atmo-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+        .atmo-card img { width: 100%; height: 260px; object-fit: cover; background: var(--coffee-black); }
+        .atmo-card video { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: var(--coffee-black); }
+        .atmo-wide { grid-column: span 2; }
+        @media (max-width: 640px) { .atmo-wide { grid-column: span 1; } }
+        .atmo-caption {
+            padding: 14px 16px; font-size: 13.5px; font-weight: 500; text-align: center;
+            color: var(--text-muted); border-top: 1px solid var(--bg-natural);
+            display: flex; align-items: center; justify-content: center; gap: 8px;
+        }
+        .atmo-caption .icon { color: var(--accent-olive); }
+
+        /* ===== Menu ===== */
+        .pricing { background: var(--white-card); }
+        .menu-wrapper { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; width: 100%; }
+        .menu-category {
+            background: var(--bg-natural); padding: 26px; border-radius: var(--radius);
+            border: 1px solid var(--line); height: fit-content;
+        }
+        .category-title {
+            font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700;
+            border-bottom: 2px solid var(--accent-olive); padding-bottom: 10px; margin-bottom: 20px;
+            text-transform: uppercase; letter-spacing: 0.5px; display: flex; gap: 10px; align-items: center;
+        }
+        .category-num {
+            background: var(--accent-olive); color: white; font-size: 13px;
+            width: 26px; height: 26px; display: flex; align-items: center; justify-content: center;
+            border-radius: 50%; font-family: 'Be Vietnam Pro', sans-serif; font-weight: 700; flex: none;
+        }
+        .menu-item { margin-bottom: 18px; }
+        .menu-item:last-child { margin-bottom: 0; }
+        .menu-header { display: flex; align-items: baseline; gap: 10px; margin-bottom: 3px; }
+        .menu-name { font-weight: 600; font-size: 16px; color: var(--coffee-dark); text-align: left; }
+        .menu-name small { font-size: 12px; color: var(--text-muted); font-weight: 500; }
+        .menu-dots { flex: 1; border-bottom: 2px dotted #D8D2C4; transform: translateY(-4px); min-width: 16px; }
+        .menu-price { font-weight: 700; color: var(--accent-olive); white-space: nowrap; font-size: 15.5px; text-align: right; }
+        .menu-desc { font-size: 13px; color: var(--text-muted); font-weight: 400; text-align: left; display: block; }
+
+        /* ===== Location ===== */
+        .map-note { text-align: center; margin-bottom: 22px; font-size: 15px; color: var(--text-muted); }
+        .map-link {
+            display: inline-flex; align-items: center; gap: 8px;
+            color: var(--olive-dark); text-decoration: none; font-weight: 700;
+            border-bottom: 2px solid var(--accent-olive); padding-bottom: 2px;
+        }
+        .map-link:hover { color: var(--accent-olive); }
+        .map-container {
+            width: 100%; height: 420px; border-radius: 24px; overflow: hidden;
+            border: 1px solid var(--line); box-shadow: 0 6px 20px rgba(0,0,0,0.07);
+        }
+        .map-container iframe { width: 100%; height: 100%; border: 0; }
+
+        /* ===== CTA / Footer ===== */
+        .cta-block { background-color: var(--white-card); text-align: center; padding: 80px 0 40px; border-bottom: none; }
+        .cta-block h2 { font-size: clamp(26px, 4vw, 34px); margin-bottom: 12px; }
+        .cta-block > .container > p { margin-bottom: 28px; font-size: 17px; color: var(--text-muted); }
+        .social-footer { display: flex; justify-content: center; gap: 28px; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); }
+        .social-link {
+            display: inline-flex; align-items: center; gap: 8px;
+            text-decoration: none; font-size: 15px; font-weight: 600; color: var(--coffee-dark); transition: color 0.2s;
+        }
+        .social-link:hover { color: var(--accent-olive); }
+        .site-footer { background: var(--coffee-black); color: rgba(245,242,235,0.75); text-align: center; padding: 28px 20px; font-size: 13.5px; }
+        .site-footer strong { color: #F5F2EB; font-family: 'Playfair Display', serif; letter-spacing: 0.5px; }
+
+        /* ===== Scroll reveal ===== */
+        .reveal { opacity: 0; transform: translateY(26px); transition: opacity 0.7s cubic-bezier(0.22,1,0.36,1), transform 0.7s cubic-bezier(0.22,1,0.36,1); }
+        .reveal.is-visible { opacity: 1; transform: translateY(0); }
+        .drinks-grid > *:nth-child(2), .atmosphere-grid > *:nth-child(2) { transition-delay: 0.08s; }
+        .drinks-grid > *:nth-child(3), .atmosphere-grid > *:nth-child(3) { transition-delay: 0.16s; }
+        .drinks-grid > *:nth-child(4), .atmosphere-grid > *:nth-child(4) { transition-delay: 0.24s; }
+        .atmosphere-grid > *:nth-child(5) { transition-delay: 0.32s; }
+        .atmosphere-grid > *:nth-child(6) { transition-delay: 0.4s; }
+
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            .fade-item { animation: none; opacity: 1; transform: none; }
+            .reveal { opacity: 1; transform: none; transition: none; }
+            .scroll-cue { animation: none; }
+            * { transition-duration: 0.01ms !important; }
+        }
+    </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="vi"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Tien Coffee | Sân Vườn &amp; Hồ Cá Koi — Đà Nẵng&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="description" content="Tien Coffee — ốc đảo xanh giữa Đà Nẵng với hồ cá koi, thác nước và cà phê đặc sản pha chế mỗi ngày. 46 Loseby, An Hải, Sơn Trà."&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="theme-color" content="#271714"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="icon" type="image/jpeg" href="logo.jpg"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta property="og:type" content="website"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta property="og:title" content="Tien Coffee | Da Nang"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta property="og:description" content="A hidden green paradise with koi fish &amp; waterfall — 46 Loseby, An Hải, Sơn Trà, Đà Nẵng."&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta property="og:url" content="https://tiencoffee.netlify.app"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta property="og:image" content="https://tiencoffee.netlify.app/.netlify/images?url=/drinks.jpg&amp;fm=jpg&amp;w=1200&amp;h=630&amp;fit=cover&amp;q=80"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta property="og:locale" content="vi_VN"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta property="og:locale:alternate" content="en_US"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400&amp;family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script type="application/ld+json"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>{</p>
-<p class="p1"><span class="Apple-converted-space">        </span>"@context": "https://schema.org",</p>
-<p class="p1"><span class="Apple-converted-space">        </span>"@type": "CafeOrCoffeeShop",</p>
-<p class="p1"><span class="Apple-converted-space">        </span>"name": "Tien Coffee",</p>
-<p class="p1"><span class="Apple-converted-space">        </span>"url": "https://tiencoffee.netlify.app",</p>
-<p class="p1"><span class="Apple-converted-space">        </span>"telephone": "+84342697551",</p>
-<p class="p1"><span class="Apple-converted-space">        </span>"priceRange": "₫10.000–₫45.000",</p>
-<p class="p1"><span class="Apple-converted-space">        </span>"servesCuisine": ["Coffee", "Vietnamese"],</p>
-<p class="p1"><span class="Apple-converted-space">        </span>"image": "https://tiencoffee.netlify.app/.netlify/images?url=/drinks.jpg&amp;fm=jpg&amp;w=1200&amp;h=630&amp;fit=cover&amp;q=80",</p>
-<p class="p1"><span class="Apple-converted-space">        </span>"address": {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>"@type": "PostalAddress",</p>
-<p class="p1"><span class="Apple-converted-space">            </span>"streetAddress": "46 Loseby, An Hải",</p>
-<p class="p1"><span class="Apple-converted-space">            </span>"addressLocality": "Đà Nẵng",</p>
-<p class="p1"><span class="Apple-converted-space">            </span>"addressRegion": "Sơn Trà",</p>
-<p class="p1"><span class="Apple-converted-space">            </span>"addressCountry": "VN"</p>
-<p class="p1"><span class="Apple-converted-space">        </span>},</p>
-<p class="p1"><span class="Apple-converted-space">        </span>"hasMap": "https://maps.app.goo.gl/yjayDcvZRYSWKZA88",</p>
-<p class="p1"><span class="Apple-converted-space">        </span>"sameAs": [</p>
-<p class="p1"><span class="Apple-converted-space">            </span>"https://instagram.com/tien.coffee.shop",</p>
-<p class="p1"><span class="Apple-converted-space">            </span>"https://www.facebook.com/share/1DaXoe3VbJ/"</p>
-<p class="p1"><span class="Apple-converted-space">        </span>]</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>:root {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--accent-olive: #6B8E23;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--olive-dark: #556B2F;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--olive-soft: #EFF3E4;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--coffee-dark: #3E2723;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--coffee-black: #271714;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--bg-natural: #F5F2EB;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--white-card: #FFFFFF;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--text-muted: #6d5c58;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--line: #EAE6DD;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--radius: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--shadow-card: 0 6px 18px rgba(62, 39, 35, 0.06);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--shadow-hover: 0 14px 32px rgba(62, 39, 35, 0.12);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>html { scroll-behavior: smooth; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Be Vietnam Pro', 'Roboto', sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--coffee-dark);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--bg-natural);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.6;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>overflow-x: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* subtle paper grain */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>body::before {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>content: "";</p>
-<p class="p1"><span class="Apple-converted-space">            </span>position: fixed;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>inset: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>z-index: 1;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>pointer-events: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>opacity: 0.035;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>h1, h2, h3 { font-family: 'Playfair Display', serif; color: var(--coffee-dark); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>img, video { display: block; max-width: 100%; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.icon { width: 1.15em; height: 1.15em; flex: none; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; vertical-align: -0.2em; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.icon-filled { fill: currentColor; stroke: none; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>a:focus-visible, button:focus-visible { outline: 2px solid var(--accent-olive); outline-offset: 3px; border-radius: 4px; }</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.container { width: 100%; padding: 0 20px; max-width: 1200px; margin: 0 auto; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>section { padding: 72px 0; border-bottom: 1px solid var(--line); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>@media (min-width: 720px) { section { padding: 88px 0; } }</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Language visibility */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>html[lang="en"] .lang-vi { display: none !important; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>html[lang="vi"] .lang-en { display: none !important; }</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* ===== Top navigation ===== */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.topbar {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>position: fixed;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>top: 0; left: 0; right: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>z-index: 100;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>justify-content: space-between;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>gap: 16px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 10px 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(39, 23, 20, 0.55);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>backdrop-filter: blur(10px);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>-webkit-backdrop-filter: blur(10px);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: background 0.3s, box-shadow 0.3s;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.topbar.scrolled { background: rgba(39, 23, 20, 0.92); box-shadow: 0 4px 20px rgba(0,0,0,0.25); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #fff; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.brand img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; border: 1px solid rgba(255,255,255,0.35); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.brand-name { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; letter-spacing: 0.5px; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.topbar-nav { display: none; gap: 26px; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.topbar-nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.topbar-nav a:hover { color: #fff; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.topbar-actions { display: flex; align-items: center; gap: 12px; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.lang-switch { display: flex; gap: 6px; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.lang-btn {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: transparent; border: 1.5px solid rgba(255,255,255,0.4); color: #fff;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 4px 12px; border-radius: 999px; cursor: pointer; font-size: 12.5px; font-weight: 700;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family: inherit; transition: all 0.2s;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.lang-btn.active { background-color: var(--accent-olive); border-color: var(--accent-olive); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.topbar-call {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex; align-items: center; justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 36px; height: 36px; border-radius: 50%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: var(--accent-olive); color: #fff; text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: background 0.2s;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.topbar-call:hover { background: var(--olive-dark); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>@media (min-width: 860px) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>.topbar { padding: 12px 32px; }</p>
-<p class="p1"><span class="Apple-converted-space">            </span>.topbar-nav { display: flex; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* ===== Buttons ===== */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.btn {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex; align-items: center; justify-content: center; gap: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--accent-olive); color: #ffffff;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 15px 24px; font-weight: 600; text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 999px; font-size: 16px; font-family: inherit;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 100%; max-width: 340px; margin-left: auto; margin-right: auto;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: none; cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 8px 20px rgba(107, 142, 35, 0.28);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: background 0.2s, transform 0.2s, box-shadow 0.2s;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.btn:hover { background-color: var(--olive-dark); transform: translateY(-2px); box-shadow: 0 12px 26px rgba(107, 142, 35, 0.34); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.btn-ghost {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: inline-flex; align-items: center; gap: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: 1.5px solid rgba(255,255,255,0.55); color: #fff;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 10px 20px; border-radius: 999px; text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 14px; font-weight: 600; transition: all 0.2s;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(255,255,255,0.06);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.btn-ghost:hover { background: rgba(255,255,255,0.15); border-color: #fff; }</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* ===== Hero ===== */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hero {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>position: relative; text-align: center; color: #fff; overflow: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--coffee-black); min-height: 100svh;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex; align-items: center; border-bottom: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 96px 0 64px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hero-video-bg {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>position: absolute; top: 50%; left: 50%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>min-width: 100%; min-height: 100%; width: auto; height: auto;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transform: translate(-50%, -50%); object-fit: cover; z-index: 1;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hero-overlay {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>position: absolute; inset: 0; z-index: 2;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(180deg, rgba(39,23,20,0.62) 0%, rgba(39,23,20,0.35) 45%, rgba(39,23,20,0.88) 100%);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hero .container { position: relative; z-index: 3; max-width: 680px; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hero h1 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #FFFFFF; font-size: clamp(44px, 8vw, 68px); font-weight: 800;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>letter-spacing: -1px; line-height: 1.08; margin: 14px 0 10px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hero-tagline {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Playfair Display', serif; font-style: italic;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: clamp(18px, 3vw, 22px); color: #E0DCD3; margin-bottom: 28px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hero-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 32px; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.chip {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: inline-flex; align-items: center; gap: 7px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #F5F2EB; font-size: 13.5px; font-weight: 500;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 8px 16px; border-radius: 999px; backdrop-filter: blur(4px);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.chip .icon { color: #B9CE8A; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hero-info-box {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: var(--radius); padding: 16px 20px; max-width: 420px; margin: 0 auto 24px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>backdrop-filter: blur(6px); text-align: left;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hero-info-box a { display: flex; align-items: center; gap: 10px; color: #F5F2EB; text-decoration: none; font-size: 15px; font-weight: 500; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hero-info-box .icon { color: #B9CE8A; width: 1.3em; height: 1.3em; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hero-cta { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.scroll-cue {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>position: absolute; bottom: 22px; left: 50%; transform: translateX(-50%);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>z-index: 3; color: rgba(255,255,255,0.7); animation: bob 2.2s ease-in-out infinite;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>@keyframes bob { 0%, 100% { transform: translate(-50%, 0); } 50% { transform: translate(-50%, 8px); } }</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* hero entrance */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.fade-item { opacity: 0; transform: translateY(22px); animation: rise 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.fade-item:nth-child(1) { animation-delay: 0.1s; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.fade-item:nth-child(2) { animation-delay: 0.22s; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.fade-item:nth-child(3) { animation-delay: 0.34s; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.fade-item:nth-child(4) { animation-delay: 0.46s; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.fade-item:nth-child(5) { animation-delay: 0.58s; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.fade-item:nth-child(6) { animation-delay: 0.7s; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>@keyframes rise { to { opacity: 1; transform: translateY(0); } }</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* ===== Section headers ===== */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.section-title { font-size: clamp(28px, 4.5vw, 36px); text-align: center; font-weight: 700; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.section-subtitle {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center; font-size: 13.5px; color: var(--accent-olive);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 40px; text-transform: uppercase; font-weight: 700; letter-spacing: 1.5px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.section-subtitle a { color: inherit; text-decoration: none; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.section-subtitle a:hover { text-decoration: underline; }</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* ===== Signature drinks ===== */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.drinks-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 22px; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.drink-card {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: var(--white-card); border-radius: var(--radius); overflow: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid var(--line); box-shadow: var(--shadow-card);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex; flex-direction: column; transition: transform 0.3s, box-shadow 0.3s;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.drink-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.drink-card img { width: 100%; height: 240px; object-fit: cover; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.drink-info {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 16px; text-align: center; font-size: 15px; font-weight: 600;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-top: 1px solid var(--bg-natural); display: flex; flex-direction: column;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.drink-info small { font-size: 12px; color: var(--text-muted); font-weight: 500; margin-top: 3px; }</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* ===== Atmosphere ===== */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.atmosphere-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>@media (max-width: 640px) { .atmosphere-grid { grid-template-columns: 1fr; } }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.atmo-card {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: var(--white-card); border-radius: var(--radius); overflow: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid var(--line); box-shadow: var(--shadow-card); transition: transform 0.3s, box-shadow 0.3s;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.atmo-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.atmo-card img { width: 100%; height: 260px; object-fit: cover; background: var(--coffee-black); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.atmo-card video { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: var(--coffee-black); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.atmo-wide { grid-column: span 2; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>@media (max-width: 640px) { .atmo-wide { grid-column: span 1; } }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.atmo-caption {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 14px 16px; font-size: 13.5px; font-weight: 500; text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--text-muted); border-top: 1px solid var(--bg-natural);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex; align-items: center; justify-content: center; gap: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.atmo-caption .icon { color: var(--accent-olive); }</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* ===== Menu ===== */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.pricing { background: var(--white-card); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.menu-wrapper { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; width: 100%; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.menu-category {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: var(--bg-natural); padding: 26px; border-radius: var(--radius);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid var(--line); height: fit-content;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.category-title {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 2px solid var(--accent-olive); padding-bottom: 10px; margin-bottom: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-transform: uppercase; letter-spacing: 0.5px; display: flex; gap: 10px; align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.category-num {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: var(--accent-olive); color: white; font-size: 13px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 26px; height: 26px; display: flex; align-items: center; justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 50%; font-family: 'Be Vietnam Pro', sans-serif; font-weight: 700; flex: none;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.menu-item { margin-bottom: 18px; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.menu-item:last-child { margin-bottom: 0; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.menu-header { display: flex; align-items: baseline; gap: 10px; margin-bottom: 3px; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.menu-name { font-weight: 600; font-size: 16px; color: var(--coffee-dark); text-align: left; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.menu-name small { font-size: 12px; color: var(--text-muted); font-weight: 500; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.menu-dots { flex: 1; border-bottom: 2px dotted #D8D2C4; transform: translateY(-4px); min-width: 16px; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.menu-price { font-weight: 700; color: var(--accent-olive); white-space: nowrap; font-size: 15.5px; text-align: right; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.menu-desc { font-size: 13px; color: var(--text-muted); font-weight: 400; text-align: left; display: block; }</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* ===== Location ===== */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.map-note { text-align: center; margin-bottom: 22px; font-size: 15px; color: var(--text-muted); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.map-link {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: inline-flex; align-items: center; gap: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--olive-dark); text-decoration: none; font-weight: 700;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 2px solid var(--accent-olive); padding-bottom: 2px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.map-link:hover { color: var(--accent-olive); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.map-container {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 100%; height: 420px; border-radius: 24px; overflow: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid var(--line); box-shadow: 0 6px 20px rgba(0,0,0,0.07);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.map-container iframe { width: 100%; height: 100%; border: 0; }</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* ===== CTA / Footer ===== */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.cta-block { background-color: var(--white-card); text-align: center; padding: 80px 0 40px; border-bottom: none; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.cta-block h2 { font-size: clamp(26px, 4vw, 34px); margin-bottom: 12px; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.cta-block &gt; .container &gt; p { margin-bottom: 28px; font-size: 17px; color: var(--text-muted); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.social-footer { display: flex; justify-content: center; gap: 28px; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.social-link {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: inline-flex; align-items: center; gap: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none; font-size: 15px; font-weight: 600; color: var(--coffee-dark); transition: color 0.2s;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.social-link:hover { color: var(--accent-olive); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.site-footer { background: var(--coffee-black); color: rgba(245,242,235,0.75); text-align: center; padding: 28px 20px; font-size: 13.5px; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.site-footer strong { color: #F5F2EB; font-family: 'Playfair Display', serif; letter-spacing: 0.5px; }</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* ===== Scroll reveal ===== */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.reveal { opacity: 0; transform: translateY(26px); transition: opacity 0.7s cubic-bezier(0.22,1,0.36,1), transform 0.7s cubic-bezier(0.22,1,0.36,1); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.reveal.is-visible { opacity: 1; transform: translateY(0); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.drinks-grid &gt; *:nth-child(2), .atmosphere-grid &gt; *:nth-child(2) { transition-delay: 0.08s; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.drinks-grid &gt; *:nth-child(3), .atmosphere-grid &gt; *:nth-child(3) { transition-delay: 0.16s; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.drinks-grid &gt; *:nth-child(4), .atmosphere-grid &gt; *:nth-child(4) { transition-delay: 0.24s; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.atmosphere-grid &gt; *:nth-child(5) { transition-delay: 0.32s; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.atmosphere-grid &gt; *:nth-child(6) { transition-delay: 0.4s; }</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>@media (prefers-reduced-motion: reduce) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>html { scroll-behavior: auto; }</p>
-<p class="p1"><span class="Apple-converted-space">            </span>.fade-item { animation: none; opacity: 1; transform: none; }</p>
-<p class="p1"><span class="Apple-converted-space">            </span>.reveal { opacity: 1; transform: none; transition: none; }</p>
-<p class="p1"><span class="Apple-converted-space">            </span>.scroll-cue { animation: none; }</p>
-<p class="p1"><span class="Apple-converted-space">            </span>* { transition-duration: 0.01ms !important; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- SVG icon sprite --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;svg width="0" height="0" style="position:absolute" aria-hidden="true"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;symbol id="i-pin" viewBox="0 0 24 24"&gt;&lt;path d="M12 21c-4.4-3.9-7-7.5-7-11a7 7 0 1 1 14 0c0 3.5-2.6 7.1-7 11z"/&gt;&lt;circle cx="12" cy="10" r="2.6"/&gt;&lt;/symbol&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;symbol id="i-phone" viewBox="0 0 24 24"&gt;&lt;path d="M5 4h4l1.5 4.5L8 10.5a12 12 0 0 0 5.5 5.5l2-2.5L20 15v4a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z"/&gt;&lt;/symbol&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;symbol id="i-ig" viewBox="0 0 24 24"&gt;&lt;rect x="3" y="3" width="18" height="18" rx="5"/&gt;&lt;circle cx="12" cy="12" r="4"/&gt;&lt;circle cx="17.2" cy="6.8" r="0.9" fill="currentColor" stroke="none"/&gt;&lt;/symbol&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;symbol id="i-fb" viewBox="0 0 24 24"&gt;&lt;path d="M14 8h3V4.5h-3A4.5 4.5 0 0 0 9.5 9v2.5H7V15h2.5v6H13v-6h3l.5-3.5H13V9a1 1 0 0 1 1-1z"/&gt;&lt;/symbol&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;symbol id="i-leaf" viewBox="0 0 24 24"&gt;&lt;path d="M5 19C5 9 11 4 20 4c0 9-5 15-13 15"/&gt;&lt;path d="M5 19c2-5 5-8 10-10"/&gt;&lt;/symbol&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;symbol id="i-fish" viewBox="0 0 24 24"&gt;&lt;path d="M2 12s4-5.5 10-5.5S22 12 22 12s-4 5.5-10 5.5S2 12 2 12z"/&gt;&lt;path d="M22 12l2.5-3M22 12l2.5 3" transform="translate(-3 0)"/&gt;&lt;circle cx="8" cy="11" r="0.9" fill="currentColor" stroke="none"/&gt;&lt;/symbol&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;symbol id="i-cup" viewBox="0 0 24 24"&gt;&lt;path d="M4 9h12v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9z"/&gt;&lt;path d="M16 10h2a2.5 2.5 0 0 1 0 5h-2"/&gt;&lt;path d="M8 5.5c0-1 .8-1.2.8-2M12 5.5c0-1 .8-1.2.8-2"/&gt;&lt;/symbol&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;symbol id="i-film" viewBox="0 0 24 24"&gt;&lt;rect x="3" y="5" width="18" height="14" rx="2.5"/&gt;&lt;path d="M7 5v14M17 5v14M3 9.5h4M3 14.5h4M17 9.5h4M17 14.5h4"/&gt;&lt;/symbol&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;symbol id="i-spark" viewBox="0 0 24 24"&gt;&lt;path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3z"/&gt;&lt;path d="M19 16l.9 2.1L22 19l-2.1.9L19 22l-.9-2.1L16 19l2.1-.9L19 16z"/&gt;&lt;/symbol&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;symbol id="i-down" viewBox="0 0 24 24"&gt;&lt;path d="M12 4v14M6 12l6 6 6-6"/&gt;&lt;/symbol&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;symbol id="i-ext" viewBox="0 0 24 24"&gt;&lt;path d="M14 5h5v5"/&gt;&lt;path d="M19 5l-8 8"/&gt;&lt;path d="M19 13.5V18a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 18V7a1.5 1.5 0 0 1 1.5-1.5H11"/&gt;&lt;/symbol&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/svg&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Top navigation --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;header class="topbar" id="topbar"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;a class="brand" href="#top" aria-label="Tien Coffee — home"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;img src="/.netlify/images?url=/logo.jpg&amp;w=96&amp;h=96&amp;fit=cover&amp;fm=webp&amp;q=80" alt="Tien Coffee logo" width="34" height="34"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="brand-name"&gt;Tien Coffee&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;nav class="topbar-nav" aria-label="Main navigation"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#drinks"&gt;&lt;span class="lang-en"&gt;Drinks&lt;/span&gt;&lt;span class="lang-vi"&gt;Đặc Trưng&lt;/span&gt;&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#atmosphere"&gt;&lt;span class="lang-en"&gt;Atmosphere&lt;/span&gt;&lt;span class="lang-vi"&gt;Không Gian&lt;/span&gt;&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#menu"&gt;&lt;span class="lang-en"&gt;Menu&lt;/span&gt;&lt;span class="lang-vi"&gt;Menu&lt;/span&gt;&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#location"&gt;&lt;span class="lang-en"&gt;Location&lt;/span&gt;&lt;span class="lang-vi"&gt;Đường Đến&lt;/span&gt;&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/nav&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="topbar-actions"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="lang-switch" role="group" aria-label="Language"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="lang-btn" type="button" data-lang="en" onclick="setLang('en')" aria-pressed="false"&gt;EN&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="lang-btn active" type="button" data-lang="vi" onclick="setLang('vi')" aria-pressed="true"&gt;VN&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a class="topbar-call" href="tel:0342697551" aria-label="Call Tien Coffee"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;svg class="icon" aria-hidden="true"&gt;&lt;use href="#i-phone"/&gt;&lt;/svg&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Hero --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="hero" id="top"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;video autoplay loop muted playsinline preload="metadata" class="hero-video-bg" aria-hidden="true"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;source src="coffee-process.mp4" type="video/mp4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/video&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="hero-overlay" aria-hidden="true"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="hero-chips fade-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="chip"&gt;&lt;svg class="icon" aria-hidden="true"&gt;&lt;use href="#i-leaf"/&gt;&lt;/svg&gt;&lt;span class="lang-en"&gt;Garden&lt;/span&gt;&lt;span class="lang-vi"&gt;Sân Vườn&lt;/span&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="chip"&gt;&lt;svg class="icon" aria-hidden="true"&gt;&lt;use href="#i-fish"/&gt;&lt;/svg&gt;&lt;span class="lang-en"&gt;Koi Pond&lt;/span&gt;&lt;span class="lang-vi"&gt;Hồ Cá Koi&lt;/span&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="chip"&gt;&lt;svg class="icon" aria-hidden="true"&gt;&lt;use href="#i-cup"/&gt;&lt;/svg&gt;&lt;span class="lang-en"&gt;Specialty Coffee&lt;/span&gt;&lt;span class="lang-vi"&gt;Cà Phê Đặc Sản&lt;/span&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1 class="fade-item"&gt;Tien Coffee&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="hero-tagline fade-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="lang-en"&gt;A hidden green paradise with koi fish &amp;amp; waterfall&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="lang-vi"&gt;Ốc đảo xanh yên bình với hồ cá koi &amp;amp; thác nước&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="hero-info-box fade-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="https://maps.app.goo.gl/yjayDcvZRYSWKZA88" target="_blank" rel="noopener"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;svg class="icon" aria-hidden="true"&gt;&lt;use href="#i-pin"/&gt;&lt;/svg&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-en"&gt;46 Loseby, An Hai, Da Nang&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-vi"&gt;46 Loseby, An Hải, Đà Nẵng&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="hero-cta fade-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#menu" class="btn"&gt;&lt;svg class="icon" aria-hidden="true"&gt;&lt;use href="#i-cup"/&gt;&lt;/svg&gt;&lt;span class="lang-en"&gt;View Our Menu&lt;/span&gt;&lt;span class="lang-vi"&gt;Xem Thực Đơn&lt;/span&gt;&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="tel:0342697551" class="btn-ghost"&gt;&lt;svg class="icon" aria-hidden="true"&gt;&lt;use href="#i-phone"/&gt;&lt;/svg&gt;&lt;span class="lang-en"&gt;Call to Order&lt;/span&gt;&lt;span class="lang-vi"&gt;Gọi Đặt Hàng&lt;/span&gt;&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;a class="scroll-cue" href="#drinks" aria-label="Scroll down"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;svg class="icon" style="width:26px;height:26px" aria-hidden="true"&gt;&lt;use href="#i-down"/&gt;&lt;/svg&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Signature drinks --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="drinks-gallery" id="drinks"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="section-title reveal"&gt;&lt;span class="lang-en"&gt;Signature Drinks&lt;/span&gt;&lt;span class="lang-vi"&gt;Thức Uống Đặc Trưng&lt;/span&gt;&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="section-subtitle reveal"&gt;&lt;span class="lang-en"&gt;Fresh &amp;amp; Crafted Everyday&lt;/span&gt;&lt;span class="lang-vi"&gt;Tươi Ngon &amp;amp; Pha Chế Mỗi Ngày&lt;/span&gt;&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="drinks-grid"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;article class="drink-card reveal"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;img src="/.netlify/images?url=/drink1.jpg&amp;w=640&amp;h=480&amp;fit=cover&amp;fm=webp&amp;q=75" alt="Coconut coffee smoothie topped with ice cream" width="640" height="480" loading="lazy" decoding="async"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="drink-info"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-en"&gt;Coconut Coffee &lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-vi"&gt; Cà Phê Cốt Dừa &lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;small&gt;45.000₫&lt;/small&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/article&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;article class="drink-card reveal"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;img src="/.netlify/images?url=/drink2.jpg&amp;w=640&amp;h=480&amp;fit=cover&amp;fm=webp&amp;q=75" alt="Avocado and young coconut smoothie" width="640" height="480" loading="lazy" decoding="async"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="drink-info"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-en"&gt;Avocado Coconut Smoothie&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-vi"&gt;Sinh Tố Bơ Dừa Non&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;small&gt;45.000₫&lt;/small&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/article&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;article class="drink-card reveal"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;img src="/.netlify/images?url=/drink3.jpg&amp;w=640&amp;h=480&amp;fit=cover&amp;fm=webp&amp;q=75" alt="Pink guava and dragon fruit iced tea" width="640" height="480" loading="lazy" decoding="async"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="drink-info"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-en"&gt;Pink Guava Dragon Fruit Tea&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-vi"&gt;Trà Ổi Hồng Thanh Long&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;small&gt;45.000₫&lt;/small&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/article&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;article class="drink-card reveal"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;img src="/.netlify/images?url=/drink4.jpg&amp;w=640&amp;h=480&amp;fit=cover&amp;fm=webp&amp;q=75" alt="Fresh mango smoothie" width="640" height="480" loading="lazy" decoding="async"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="drink-info"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-en"&gt;Mango Coconut Smoothie&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-vi"&gt;Sinh Tố Xoài Dừa&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;small&gt;45.000₫&lt;/small&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/article&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Atmosphere --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="atmosphere-section" id="atmosphere"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="section-title reveal"&gt;&lt;span class="lang-en"&gt;Feel Our Atmosphere&lt;/span&gt;&lt;span class="lang-vi"&gt;Không Gian Lãng Mạn&lt;/span&gt;&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="section-subtitle reveal"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="https://instagram.com/tien.coffee.shop" target="_blank" rel="noopener"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;svg class="icon" aria-hidden="true"&gt;&lt;use href="#i-ig"/&gt;&lt;/svg&gt; @tien.coffee.shop</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="atmosphere-grid"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;article class="atmo-card atmo-wide reveal"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;video controls preload="none" poster="/.netlify/images?url=/koi1.jpg&amp;w=1000&amp;h=563&amp;fit=cover&amp;fm=jpg&amp;q=70"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;source src="garden-video.mp4" type="video/mp4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/video&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="atmo-caption"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;svg class="icon" aria-hidden="true"&gt;&lt;use href="#i-film"/&gt;&lt;/svg&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-en"&gt;Garden &amp;amp; Koi Pond Waterfall&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-vi"&gt;Toàn Cảnh Thác Nước Hồ Cá Koi&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/article&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;article class="atmo-card reveal"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;img src="/.netlify/images?url=/interior.jpg&amp;w=800&amp;h=560&amp;fit=cover&amp;fm=webp&amp;q=75" alt="Shaded wooden seating in the garden" width="800" height="560" loading="lazy" decoding="async"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="atmo-caption"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;svg class="icon" aria-hidden="true"&gt;&lt;use href="#i-leaf"/&gt;&lt;/svg&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-en"&gt;Shaded Wooden Seats&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-vi"&gt;Góc Sân Vườn Mát Mẻ&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/article&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;article class="atmo-card reveal"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;img src="/.netlify/images?url=/koi.jpg&amp;w=800&amp;h=560&amp;fit=cover&amp;fm=webp&amp;q=75" alt="Colorful koi fish in the pond" width="800" height="560" loading="lazy" decoding="async"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="atmo-caption"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;svg class="icon" aria-hidden="true"&gt;&lt;use href="#i-fish"/&gt;&lt;/svg&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-en"&gt;Friendly Koi Pond&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-vi"&gt;Đàn Cá Koi Nhiều Màu Sắc&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/article&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;article class="atmo-card reveal"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;img src="/.netlify/images?url=/interior3.jpg&amp;w=800&amp;h=560&amp;fit=cover&amp;fm=webp&amp;q=75" alt="Cozy corner of the coffee garden" width="800" height="560" loading="lazy" decoding="async"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="atmo-caption"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;svg class="icon" aria-hidden="true"&gt;&lt;use href="#i-leaf"/&gt;&lt;/svg&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-en"&gt;Quiet Garden Corners&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-vi"&gt;Góc Nhỏ Yên Tĩnh&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/article&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;article class="atmo-card reveal"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;img src="/.netlify/images?url=/koi1.jpg&amp;w=800&amp;h=560&amp;fit=cover&amp;fm=webp&amp;q=75" alt="Koi pond under the trees" width="800" height="560" loading="lazy" decoding="async"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="atmo-caption"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;svg class="icon" aria-hidden="true"&gt;&lt;use href="#i-fish"/&gt;&lt;/svg&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-en"&gt;Koi Pond by the Waterfall&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-vi"&gt;Hồ Koi Bên Thác Nước&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/article&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;article class="atmo-card reveal"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;img src="/.netlify/images?url=/barista.jpg&amp;w=800&amp;h=560&amp;fit=cover&amp;fm=webp&amp;q=75" alt="Barista preparing coffee at the counter" width="800" height="560" loading="lazy" decoding="async"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="atmo-caption"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;svg class="icon" aria-hidden="true"&gt;&lt;use href="#i-cup"/&gt;&lt;/svg&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-en"&gt;Crafted with Love&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-vi"&gt;Phục Vụ Tận Tâm&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/article&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;article class="atmo-card reveal"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;img src="/.netlify/images?url=/coffee-cup.jpg&amp;w=800&amp;h=560&amp;fit=cover&amp;fm=webp&amp;q=75" alt="Specialty espresso served in the garden" width="800" height="560" loading="lazy" decoding="async"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="atmo-caption"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;svg class="icon" aria-hidden="true"&gt;&lt;use href="#i-spark"/&gt;&lt;/svg&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-en"&gt;Morning Specialty Espresso&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-vi"&gt;Ly Cà Phê Đậm Vị Nguyên Bản&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/article&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Menu --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="pricing" id="menu"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="section-title reveal"&gt;&lt;span class="lang-en"&gt;Our Menu&lt;/span&gt;&lt;span class="lang-vi"&gt;Menu Của Quán&lt;/span&gt;&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="section-subtitle reveal"&gt;&lt;span class="lang-en"&gt;Good Coffee • Good Mood • Everyday&lt;/span&gt;&lt;span class="lang-vi"&gt;Cà Phê Ngon • Tâm Trạng Tốt • Mỗi Ngày&lt;/span&gt;&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="menu-wrapper"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- 1. Vietnamese Coffee --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="menu-category reveal"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="category-title"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="category-num"&gt;1&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-en"&gt;Vietnamese Coffee&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-vi"&gt;Cà Phê Việt Nam&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Cà phê đen pha máy&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;20.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Vietnamese black coffee (machine)&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Cà phê đen nguyên chất pha bằng máy.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Cà phê sữa pha máy&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;22.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Vietnamese milk coffee (machine)&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Cà phê sữa thơm béo pha máy truyền thống.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Cà phê Đen SG&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;27.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Saigon black coffee&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Cà phê đen đậm đà phong cách Sài Gòn.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Cà phê Sữa SG&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;29.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Saigon milk coffee&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Cà phê sữa đá ngọt ngào kiểu Sài Gòn.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Bạc xỉu&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;35.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;White coffee (fresh milk)&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Sữa tươi kết hợp chút hương vị cà phê đậm đà.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Cà phê Muối Huế&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;35.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Salted coffee (Hue style)&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Cà phê muối đặc sản Huế với lớp kem béo mặn.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Cà phê kem trứng Hà Nội&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;35.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Egg coffee (Hanoi style)&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Kem trứng đánh bông mịn trên nền cà phê đậm vị.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Cà phê cốt dừa&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;45.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Coconut coffee&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Cà phê hòa quyện cùng cốt dừa xay đá tuyết ngậy béo.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- 2. Italian Coffee --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="menu-category reveal"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="category-title"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="category-num"&gt;2&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-en"&gt;Italian Coffee&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-vi"&gt;Cà Phê Ý&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Espresso&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;39.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Pure shots of Italian espresso.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Cà phê Espresso nguyên chất đậm vị.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Americano &lt;small&gt;&lt;span class="lang-en"&gt;(Iced / Hot)&lt;/span&gt;&lt;span class="lang-vi"&gt;(Đá / Nóng)&lt;/span&gt;&lt;/small&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;39.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Espresso lengthened with hot or cold water.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Cà phê Americano thanh nhẹ dịu dàng.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Cappuccino &lt;small&gt;&lt;span class="lang-en"&gt;(Iced / Hot)&lt;/span&gt;&lt;span class="lang-vi"&gt;(Đá / Nóng)&lt;/span&gt;&lt;/small&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;45.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Espresso with silky steamed milk foam.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Sự kết hợp hoàn hảo giữa espresso và bọt sữa mịn.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Latte &lt;small&gt;&lt;span class="lang-en"&gt;(Iced / Hot)&lt;/span&gt;&lt;span class="lang-vi"&gt;(Đá / Nóng)&lt;/span&gt;&lt;/small&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;45.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Gentle Italian-style milk coffee.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Cà phê sữa kiểu Ý nhẹ nhàng, béo ngậy.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Mocha &lt;small&gt;&lt;span class="lang-en"&gt;(Iced / Hot)&lt;/span&gt;&lt;span class="lang-vi"&gt;(Đá / Nóng)&lt;/span&gt;&lt;/small&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;45.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Coffee blended with rich chocolate.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Hương vị cà phê hòa quyện cùng sô-cô-la đậm đà.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Caramel Macchiato &lt;small&gt;&lt;span class="lang-en"&gt;(Iced / Hot)&lt;/span&gt;&lt;span class="lang-vi"&gt;(Đá / Nóng)&lt;/span&gt;&lt;/small&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;45.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Milk coffee with sweet caramel drizzle.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Cà phê sữa cùng hương sốt caramel ngọt ngào.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- 3. Tropical Fruit Tea --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="menu-category reveal"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="category-title"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="category-num"&gt;3&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-en"&gt;Tropical Fruit Tea&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-vi"&gt;Trà Hoa Quả Nhiệt Đới&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Hồng trà đào tươi&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;45.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Peach black tea&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Hồng trà thanh mát kết hợp cùng đào tươi thơm ngọt.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Trà xoài chanh dây&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;45.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Mango passion fruit tea&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Hương vị xoài chín mọng hòa cùng chanh dây chua ngọt.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Trà ổi hồng thanh long&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;45.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Pink guava dragon fruit tea&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Trà ổi hồng kết hợp thanh long đỏ tươi sạch mát.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Trà dưa lưới hoàng kim&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;45.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Golden melon tea&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Trà dưa lưới hoàng kim ngọt thanh giải nhiệt cực đã.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Trà lựu đỏ nhiệt đới&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;45.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Pomegranate tea&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Trà lựu đỏ mọng nước giàu vitamin, tươi mát.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Trà mãng cầu xiêm tươi&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;45.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Soursop tea&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Trà thơm nhẹ cùng mãng cầu xiêm chua ngọt tự nhiên.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- 4. Matcha --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="menu-category reveal"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="category-title"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="category-num"&gt;4&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-en"&gt;Matcha&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-vi"&gt;Matcha&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Matcha Latte&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;39.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Premium Japanese matcha with fresh milk.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Trà xanh Nhật Bản thượng hạng kết hợp sữa tươi.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Matcha kem muối&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;45.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Matcha latte with salted cream&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Matcha Latte đậm vị phủ lớp kem mặn béo ngậy.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Matcha kem trứng&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;45.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Matcha latte with egg cream&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Matcha quyện cùng lớp kem trứng đánh bông siêu mịn.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- 5. Yogurt Smoothies --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="menu-category reveal"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="category-title"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="category-num"&gt;5&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-en"&gt;Yogurt Smoothies&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-vi"&gt;Đá Xay - Yogurt Smoothies&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Yogurt Smoothies Dâu&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;45.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Strawberry yogurt smoothie&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Sữa chua đá xay cùng dâu tây chua ngọt thơm ngon.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Yogurt Smoothies việt quất&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;45.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Blueberry yogurt smoothie&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Sữa chua sánh mịn xay quyện cùng việt quất đậm vị.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Yogurt Smoothies ổi hồng&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;45.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Pink guava yogurt smoothie&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Sữa chua kết hợp sốt ổi hồng nhiệt đới độc đáo.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- 6. Smoothies &amp; Juices --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="menu-category reveal"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="category-title"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="category-num"&gt;6&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-en"&gt;Smoothies &amp;amp; Juices&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-vi"&gt;Sinh Tố &amp;amp; Nước Ép&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Sinh tố Bơ dừa non&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;45.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Avocado &amp;amp; young coconut smoothie&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Sinh tố bơ chín dẻo xay cùng cơm dừa non béo ngậy.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Sinh tố xoài dừa nhiệt đới&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;45.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Mango &amp;amp; coconut smoothie&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Sinh tố xoài chín cây kết hợp nước cốt dừa thơm phức.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Sinh tố mãng cầu xiêm tươi&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;45.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Soursop smoothie&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Mãng cầu tươi xay đá sánh đặc, chua dịu sảng khoái.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Nước ép cam&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;39.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Fresh orange juice, rich in vitamin C.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Nước ép cam tươi nguyên chất giàu Vitamin C.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Nước ép dứa&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;39.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Pure pineapple juice, light and sweet.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Nước ép thơm (dứa) nguyên chất ngọt thanh, mát lạnh.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Nước ép ổi&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;39.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Fresh guava juice.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Nước ép ổi xanh tươi ngon, thanh lọc cơ thể.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- 7. Hot Drinks &amp; Others --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="menu-category reveal"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="category-title"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="category-num"&gt;7&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-en"&gt;Hot Drinks &amp;amp; Others&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="lang-vi"&gt;Đồ Uống Nóng &amp;amp; Thức Uống Khác&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Cacao nóng&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;39.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Rich, warming hot chocolate.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Ca cao nóng đậm đà, ấm áp cho ngày mới.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Trà gừng&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;35.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Warming ginger tea, good for your health.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Trà gừng ấm nồng, tốt cho sức khỏe.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Nước suối&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;10.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Bottled water&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Nước uống đóng chai tinh khiết.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Bò húc&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;20.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Red Bull (can)&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Nước tăng lực Bò Húc lon.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="menu-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="menu-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-name"&gt;Pepsi&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-dots" aria-hidden="true"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="menu-price"&gt;20.000₫&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-en"&gt;Chilled Pepsi (can)&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="menu-desc lang-vi"&gt;Nước ngọt Pepsi lon mát lạnh.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Location --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="map-section" id="location"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="section-title reveal"&gt;&lt;span class="lang-en"&gt;Find Our Garden&lt;/span&gt;&lt;span class="lang-vi"&gt;Đường Đến Quán&lt;/span&gt;&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="map-note reveal"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a class="map-link" href="https://maps.app.goo.gl/Q7o8hPhkJd2CoweL8?g_st=ic" target="_blank" rel="noopener"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;svg class="icon" aria-hidden="true"&gt;&lt;use href="#i-pin"/&gt;&lt;/svg&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="lang-en"&gt;46 Loseby, An Hai, Son Tra, Da Nang &lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="lang-vi"&gt;46 Loseby, An Hải, Sơn Trà, Đà Nẵng &lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;svg class="icon" aria-hidden="true"&gt;&lt;use href="#i-ext"/&gt;&lt;/svg&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="map-container reveal"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;iframe</p>
-<p class="p1"><span class="Apple-converted-space">           </span>title="Map showing the location of Tien Coffee, 46 Loseby, An Hai, Son Tra, Da Nang"</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>src="https://www.google.com/maps?q=46%20Loseby%2C%20An%20H%E1%BA%A3i%2C%20S%C6%A1n%20Tr%C3%A0%2C%20%C4%90%C3%A0%20N%E1%BA%B5ng&amp;output=embed"</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>loading="lazy"</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>allowfullscreen</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>referrerpolicy="no-referrer-when-downgrade"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/iframe&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Call to action --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="cta-block"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="reveal"&gt;&lt;span class="lang-en"&gt;Come &amp;amp; Say Hello&lt;/span&gt;&lt;span class="lang-vi"&gt;Gặp Gỡ &amp;amp; Thưởng Thức&lt;/span&gt;&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="reveal"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="lang-en"&gt;We can't wait to serve you the perfect cup!&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="lang-vi"&gt;Tien Coffee luôn sẵn sàng chào đón bạn!&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="tel:0342697551" class="btn reveal"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;svg class="icon" aria-hidden="true"&gt;&lt;use href="#i-phone"/&gt;&lt;/svg&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="lang-en"&gt;Call &amp;amp; Order Now — 034 269 7551&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="lang-vi"&gt;Gọi Đặt Hàng Ngay — 034 269 7551&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="social-footer reveal"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="https://instagram.com/tien.coffee.shop" target="_blank" rel="noopener" class="social-link" style="color: #C13584;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;svg class="icon" aria-hidden="true"&gt;&lt;use href="#i-ig"/&gt;&lt;/svg&gt; Instagram</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="https://www.facebook.com/share/1DaXoe3VbJ/" target="_blank" rel="noopener" class="social-link" style="color: #1877F2;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;svg class="icon icon-filled" aria-hidden="true"&gt;&lt;use href="#i-fb"/&gt;&lt;/svg&gt; Facebook</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer class="site-footer"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;strong&gt;Tien Coffee&lt;/strong&gt; — 46 Loseby, An Hải, Sơn Trà, Đà Nẵng ·</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="tel:0342697551" style="color:inherit"&gt;034 269 7551&lt;/a&gt;&lt;br&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>© &lt;span id="year"&gt;2026&lt;/span&gt; Tien Coffee. &lt;span class="lang-en"&gt;All rights reserved.&lt;/span&gt;&lt;span class="lang-vi"&gt;Mọi quyền được bảo lưu.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>(function () {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>var saved = null;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>try { saved = localStorage.getItem('tc-lang'); } catch (e) {}</p>
-<p class="p1"><span class="Apple-converted-space">            </span>if (saved === 'en' || saved === 'vi') {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>document.documentElement.lang = saved;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">            </span>syncLangButtons();</p>
-<p class="p1"><span class="Apple-converted-space">        </span>})();</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>function setLang(lang) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>document.documentElement.lang = lang;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>try { localStorage.setItem('tc-lang', lang); } catch (e) {}</p>
-<p class="p1"><span class="Apple-converted-space">            </span>syncLangButtons();</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>function syncLangButtons() {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>var current = document.documentElement.lang;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>document.querySelectorAll('.lang-btn').forEach(function (btn) {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>var active = btn.dataset.lang === current;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>btn.classList.toggle('active', active);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>btn.setAttribute('aria-pressed', String(active));</p>
-<p class="p1"><span class="Apple-converted-space">            </span>});</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>// Solid topbar after scrolling past the top</p>
-<p class="p1"><span class="Apple-converted-space">        </span>window.addEventListener('scroll', function () {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>var topbar = document.getElementById('topbar');</p>
-<p class="p1"><span class="Apple-converted-space">            </span>if (topbar) topbar.classList.toggle('scrolled', window.scrollY &gt; 40);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}, { passive: true });</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>// Scroll-reveal animations</p>
-<p class="p1"><span class="Apple-converted-space">        </span>var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>if ('IntersectionObserver' in window &amp;&amp; !reduceMotion) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>var observer = new IntersectionObserver(function (entries) {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>entries.forEach(function (entry) {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>if (entry.isIntersecting) {</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>entry.target.classList.add('is-visible');</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>observer.unobserve(entry.target);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                </span>});</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });</p>
-<p class="p1"><span class="Apple-converted-space">            </span>document.querySelectorAll('.reveal').forEach(function (el) { observer.observe(el); });</p>
-<p class="p1"><span class="Apple-converted-space">        </span>} else {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-visible'); });</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>// Footer year</p>
-<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('year').textContent = new Date().getFullYear();</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+
+    <!-- SVG icon sprite -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21c-4.4-3.9-7-7.5-7-11a7 7 0 1 1 14 0c0 3.5-2.6 7.1-7 11z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+        <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l1.5 4.5L8 10.5a12 12 0 0 0 5.5 5.5l2-2.5L20 15v4a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+        <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.9" fill="currentColor" stroke="none"/></symbol>
+        <symbol id="i-fb" viewBox="0 0 24 24"><path d="M14 8h3V4.5h-3A4.5 4.5 0 0 0 9.5 9v2.5H7V15h2.5v6H13v-6h3l.5-3.5H13V9a1 1 0 0 1 1-1z"/></symbol>
+        <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19C5 9 11 4 20 4c0 9-5 15-13 15"/><path d="M5 19c2-5 5-8 10-10"/></symbol>
+        <symbol id="i-fish" viewBox="0 0 24 24"><path d="M2 12s4-5.5 10-5.5S22 12 22 12s-4 5.5-10 5.5S2 12 2 12z"/><path d="M22 12l2.5-3M22 12l2.5 3" transform="translate(-3 0)"/><circle cx="8" cy="11" r="0.9" fill="currentColor" stroke="none"/></symbol>
+        <symbol id="i-cup" viewBox="0 0 24 24"><path d="M4 9h12v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9z"/><path d="M16 10h2a2.5 2.5 0 0 1 0 5h-2"/><path d="M8 5.5c0-1 .8-1.2.8-2M12 5.5c0-1 .8-1.2.8-2"/></symbol>
+        <symbol id="i-film" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M7 5v14M17 5v14M3 9.5h4M3 14.5h4M17 9.5h4M17 14.5h4"/></symbol>
+        <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3z"/><path d="M19 16l.9 2.1L22 19l-2.1.9L19 22l-.9-2.1L16 19l2.1-.9L19 16z"/></symbol>
+        <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v14M6 12l6 6 6-6"/></symbol>
+        <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 5h5v5"/><path d="M19 5l-8 8"/><path d="M19 13.5V18a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 18V7a1.5 1.5 0 0 1 1.5-1.5H11"/></symbol>
+    </svg>
+
+    <!-- Top navigation -->
+    <header class="topbar" id="topbar">
+        <a class="brand" href="#top" aria-label="Tien Coffee — home">
+            <img src="/.netlify/images?url=/logo.jpg&w=96&h=96&fit=cover&fm=webp&q=80" alt="Tien Coffee logo" width="34" height="34">
+            <span class="brand-name">Tien Coffee</span>
+        </a>
+        <nav class="topbar-nav" aria-label="Main navigation">
+            <a href="#drinks"><span class="lang-en">Drinks</span><span class="lang-vi">Đặc Trưng</span></a>
+            <a href="#atmosphere"><span class="lang-en">Atmosphere</span><span class="lang-vi">Không Gian</span></a>
+            <a href="#menu"><span class="lang-en">Menu</span><span class="lang-vi">Menu</span></a>
+            <a href="#location"><span class="lang-en">Location</span><span class="lang-vi">Đường Đến</span></a>
+        </nav>
+        <div class="topbar-actions">
+            <div class="lang-switch" role="group" aria-label="Language">
+                <button class="lang-btn" type="button" data-lang="en" onclick="setLang('en')" aria-pressed="false">EN</button>
+                <button class="lang-btn active" type="button" data-lang="vi" onclick="setLang('vi')" aria-pressed="true">VN</button>
+            </div>
+            <a class="topbar-call" href="tel:0342697551" aria-label="Call Tien Coffee">
+                <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="top">
+        <video autoplay loop muted playsinline preload="metadata" class="hero-video-bg" aria-hidden="true">
+            <source src="coffee-process.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="container">
+            <div class="hero-chips fade-item">
+                <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-leaf"/></svg><span class="lang-en">Garden</span><span class="lang-vi">Sân Vườn</span></span>
+                <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-fish"/></svg><span class="lang-en">Koi Pond</span><span class="lang-vi">Hồ Cá Koi</span></span>
+                <span class="chip"><svg class="icon" aria-hidden="true"><use href="#i-cup"/></svg><span class="lang-en">Specialty Coffee</span><span class="lang-vi">Cà Phê Đặc Sản</span></span>
+            </div>
+            <h1 class="fade-item">Tien Coffee</h1>
+            <p class="hero-tagline fade-item">
+                <span class="lang-en">A hidden green paradise with koi fish &amp; waterfall</span>
+                <span class="lang-vi">Ốc đảo xanh yên bình với hồ cá koi &amp; thác nước</span>
+            </p>
+            <div class="hero-info-box fade-item">
+                <a href="https://maps.app.goo.gl/yjayDcvZRYSWKZA88" target="_blank" rel="noopener">
+                    <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+                    <span>
+                        <span class="lang-en">46 Loseby, An Hai, Da Nang</span>
+                        <span class="lang-vi">46 Loseby, An Hải, Đà Nẵng</span>
+                    </span>
+                </a>
+            </div>
+            <div class="hero-cta fade-item">
+                <a href="#menu" class="btn"><svg class="icon" aria-hidden="true"><use href="#i-cup"/></svg><span class="lang-en">View Our Menu</span><span class="lang-vi">Xem Thực Đơn</span></a>
+                <a href="tel:0342697551" class="btn-ghost"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span class="lang-en">Call to Order</span><span class="lang-vi">Gọi Đặt Hàng</span></a>
+            </div>
+        </div>
+        <a class="scroll-cue" href="#drinks" aria-label="Scroll down">
+            <svg class="icon" style="width:26px;height:26px" aria-hidden="true"><use href="#i-down"/></svg>
+        </a>
+    </section>
+
+    <!-- Signature drinks -->
+    <section class="drinks-gallery" id="drinks">
+        <div class="container">
+            <h2 class="section-title reveal"><span class="lang-en">Signature Drinks</span><span class="lang-vi">Thức Uống Đặc Trưng</span></h2>
+            <p class="section-subtitle reveal"><span class="lang-en">Fresh &amp; Crafted Everyday</span><span class="lang-vi">Tươi Ngon &amp; Pha Chế Mỗi Ngày</span></p>
+
+            <div class="drinks-grid">
+                <article class="drink-card reveal">
+                    <img src="/.netlify/images?url=/drink1.jpg&w=640&h=480&fit=cover&fm=webp&q=75" alt="Coconut coffee smoothie topped with ice cream" width="640" height="480" loading="lazy" decoding="async">
+                    <div class="drink-info">
+                        <span class="lang-en">Coconut Coffee </span>
+                        <span class="lang-vi"> Cà Phê Cốt Dừa </span>
+                        <small>45.000₫</small>
+                    </div>
+                </article>
+                <article class="drink-card reveal">
+                    <img src="/.netlify/images?url=/drink2.jpg&w=640&h=480&fit=cover&fm=webp&q=75" alt="Avocado and young coconut smoothie" width="640" height="480" loading="lazy" decoding="async">
+                    <div class="drink-info">
+                        <span class="lang-en">Avocado Coconut Smoothie</span>
+                        <span class="lang-vi">Sinh Tố Bơ Dừa Non</span>
+                        <small>45.000₫</small>
+                    </div>
+                </article>
+                <article class="drink-card reveal">
+                    <img src="/.netlify/images?url=/drink3.jpg&w=640&h=480&fit=cover&fm=webp&q=75" alt="Pink guava and dragon fruit iced tea" width="640" height="480" loading="lazy" decoding="async">
+                    <div class="drink-info">
+                        <span class="lang-en">Pink Guava Dragon Fruit Tea</span>
+                        <span class="lang-vi">Trà Ổi Hồng Thanh Long</span>
+                        <small>45.000₫</small>
+                    </div>
+                </article>
+                <article class="drink-card reveal">
+                    <img src="/.netlify/images?url=/drink4.jpg&w=640&h=480&fit=cover&fm=webp&q=75" alt="Fresh mango smoothie" width="640" height="480" loading="lazy" decoding="async">
+                    <div class="drink-info">
+                        <span class="lang-en">Mango Coconut Smoothie</span>
+                        <span class="lang-vi">Sinh Tố Xoài Dừa</span>
+                        <small>45.000₫</small>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Atmosphere -->
+    <section class="atmosphere-section" id="atmosphere">
+        <div class="container">
+            <h2 class="section-title reveal"><span class="lang-en">Feel Our Atmosphere</span><span class="lang-vi">Không Gian Lãng Mạn</span></h2>
+            <p class="section-subtitle reveal">
+                <a href="https://instagram.com/tien.coffee.shop" target="_blank" rel="noopener">
+                    <svg class="icon" aria-hidden="true"><use href="#i-ig"/></svg> @tien.coffee.shop
+                </a>
+            </p>
+
+            <div class="atmosphere-grid">
+                <article class="atmo-card atmo-wide reveal">
+                    <video controls preload="none" poster="/.netlify/images?url=/koi1.jpg&w=1000&h=563&fit=cover&fm=jpg&q=70">
+                        <source src="garden-video.mp4" type="video/mp4">
+                    </video>
+                    <div class="atmo-caption">
+                        <svg class="icon" aria-hidden="true"><use href="#i-film"/></svg>
+                        <span class="lang-en">Garden &amp; Koi Pond Waterfall</span>
+                        <span class="lang-vi">Toàn Cảnh Thác Nước Hồ Cá Koi</span>
+                    </div>
+                </article>
+                <article class="atmo-card reveal">
+                    <img src="/.netlify/images?url=/interior.jpg&w=800&h=560&fit=cover&fm=webp&q=75" alt="Shaded wooden seating in the garden" width="800" height="560" loading="lazy" decoding="async">
+                    <div class="atmo-caption">
+                        <svg class="icon" aria-hidden="true"><use href="#i-leaf"/></svg>
+                        <span class="lang-en">Shaded Wooden Seats</span>
+                        <span class="lang-vi">Góc Sân Vườn Mát Mẻ</span>
+                    </div>
+                </article>
+                <article class="atmo-card reveal">
+                    <img src="/.netlify/images?url=/koi.jpg&w=800&h=560&fit=cover&fm=webp&q=75" alt="Colorful koi fish in the pond" width="800" height="560" loading="lazy" decoding="async">
+                    <div class="atmo-caption">
+                        <svg class="icon" aria-hidden="true"><use href="#i-fish"/></svg>
+                        <span class="lang-en">Friendly Koi Pond</span>
+                        <span class="lang-vi">Đàn Cá Koi Nhiều Màu Sắc</span>
+                    </div>
+                </article>
+                <article class="atmo-card reveal">
+                    <img src="/.netlify/images?url=/interior3.jpg&w=800&h=560&fit=cover&fm=webp&q=75" alt="Cozy corner of the coffee garden" width="800" height="560" loading="lazy" decoding="async">
+                    <div class="atmo-caption">
+                        <svg class="icon" aria-hidden="true"><use href="#i-leaf"/></svg>
+                        <span class="lang-en">Quiet Garden Corners</span>
+                        <span class="lang-vi">Góc Nhỏ Yên Tĩnh</span>
+                    </div>
+                </article>
+                <article class="atmo-card reveal">
+                    <img src="/.netlify/images?url=/koi1.jpg&w=800&h=560&fit=cover&fm=webp&q=75" alt="Koi pond under the trees" width="800" height="560" loading="lazy" decoding="async">
+                    <div class="atmo-caption">
+                        <svg class="icon" aria-hidden="true"><use href="#i-fish"/></svg>
+                        <span class="lang-en">Koi Pond by the Waterfall</span>
+                        <span class="lang-vi">Hồ Koi Bên Thác Nước</span>
+                    </div>
+                </article>
+                <article class="atmo-card reveal">
+                    <img src="/.netlify/images?url=/barista.jpg&w=800&h=560&fit=cover&fm=webp&q=75" alt="Barista preparing coffee at the counter" width="800" height="560" loading="lazy" decoding="async">
+                    <div class="atmo-caption">
+                        <svg class="icon" aria-hidden="true"><use href="#i-cup"/></svg>
+                        <span class="lang-en">Crafted with Love</span>
+                        <span class="lang-vi">Phục Vụ Tận Tâm</span>
+                    </div>
+                </article>
+                <article class="atmo-card reveal">
+                    <img src="/.netlify/images?url=/coffee-cup.jpg&w=800&h=560&fit=cover&fm=webp&q=75" alt="Specialty espresso served in the garden" width="800" height="560" loading="lazy" decoding="async">
+                    <div class="atmo-caption">
+                        <svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg>
+                        <span class="lang-en">Morning Specialty Espresso</span>
+                        <span class="lang-vi">Ly Cà Phê Đậm Vị Nguyên Bản</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="pricing" id="menu">
+        <div class="container">
+            <h2 class="section-title reveal"><span class="lang-en">Our Menu</span><span class="lang-vi">Menu Của Quán</span></h2>
+            <p class="section-subtitle reveal"><span class="lang-en">Good Coffee • Good Mood • Everyday</span><span class="lang-vi">Cà Phê Ngon • Tâm Trạng Tốt • Mỗi Ngày</span></p>
+
+            <div class="menu-wrapper">
+
+                <!-- 1. Vietnamese Coffee -->
+                <div class="menu-category reveal">
+                    <div class="category-title">
+                        <div class="category-num">1</div>
+                        <span class="lang-en">Vietnamese Coffee</span>
+                        <span class="lang-vi">Cà Phê Việt Nam</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Cà phê đen pha máy</span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">20.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Vietnamese black coffee (machine)</span>
+                        <span class="menu-desc lang-vi">Cà phê đen nguyên chất pha bằng máy.</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Cà phê sữa pha máy</span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">22.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Vietnamese milk coffee (machine)</span>
+                        <span class="menu-desc lang-vi">Cà phê sữa thơm béo pha máy truyền thống.</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Cà phê Đen SG</span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">27.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Saigon black coffee</span>
+                        <span class="menu-desc lang-vi">Cà phê đen đậm đà phong cách Sài Gòn.</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Cà phê Sữa SG</span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">29.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Saigon milk coffee</span>
+                        <span class="menu-desc lang-vi">Cà phê sữa đá ngọt ngào kiểu Sài Gòn.</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Bạc xỉu</span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">35.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">White coffee (fresh milk)</span>
+                        <span class="menu-desc lang-vi">Sữa tươi kết hợp chút hương vị cà phê đậm đà.</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Cà phê Muối Huế</span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">35.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Salted coffee (Hue style)</span>
+                        <span class="menu-desc lang-vi">Cà phê muối đặc sản Huế với lớp kem béo mặn.</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Cà phê kem trứng Hà Nội</span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">35.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Egg coffee (Hanoi style)</span>
+                        <span class="menu-desc lang-vi">Kem trứng đánh bông mịn trên nền cà phê đậm vị.</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Cà phê cốt dừa</span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">45.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Coconut coffee</span>
+                        <span class="menu-desc lang-vi">Cà phê hòa quyện cùng cốt dừa xay đá tuyết ngậy béo.</span>
+                    </div>
+                </div>
+
+                <!-- 2. Italian Coffee -->
+                <div class="menu-category reveal">
+                    <div class="category-title">
+                        <div class="category-num">2</div>
+                        <span class="lang-en">Italian Coffee</span>
+                        <span class="lang-vi">Cà Phê Ý</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Espresso</span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">39.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Pure shots of Italian espresso.</span>
+                        <span class="menu-desc lang-vi">Cà phê Espresso nguyên chất đậm vị.</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Americano <small><span class="lang-en">(Iced / Hot)</span><span class="lang-vi">(Đá / Nóng)</span></small></span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">39.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Espresso lengthened with hot or cold water.</span>
+                        <span class="menu-desc lang-vi">Cà phê Americano thanh nhẹ dịu dàng.</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Cappuccino <small><span class="lang-en">(Iced / Hot)</span><span class="lang-vi">(Đá / Nóng)</span></small></span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">45.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Espresso with silky steamed milk foam.</span>
+                        <span class="menu-desc lang-vi">Sự kết hợp hoàn hảo giữa espresso và bọt sữa mịn.</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Latte <small><span class="lang-en">(Iced / Hot)</span><span class="lang-vi">(Đá / Nóng)</span></small></span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">45.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Gentle Italian-style milk coffee.</span>
+                        <span class="menu-desc lang-vi">Cà phê sữa kiểu Ý nhẹ nhàng, béo ngậy.</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Mocha <small><span class="lang-en">(Iced / Hot)</span><span class="lang-vi">(Đá / Nóng)</span></small></span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">45.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Coffee blended with rich chocolate.</span>
+                        <span class="menu-desc lang-vi">Hương vị cà phê hòa quyện cùng sô-cô-la đậm đà.</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Caramel Macchiato <small><span class="lang-en">(Iced / Hot)</span><span class="lang-vi">(Đá / Nóng)</span></small></span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">45.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Milk coffee with sweet caramel drizzle.</span>
+                        <span class="menu-desc lang-vi">Cà phê sữa cùng hương sốt caramel ngọt ngào.</span>
+                    </div>
+                </div>
+
+                <!-- 3. Tropical Fruit Tea -->
+                <div class="menu-category reveal">
+                    <div class="category-title">
+                        <div class="category-num">3</div>
+                        <span class="lang-en">Tropical Fruit Tea</span>
+                        <span class="lang-vi">Trà Hoa Quả Nhiệt Đới</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Hồng trà đào tươi</span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">45.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Peach black tea</span>
+                        <span class="menu-desc lang-vi">Hồng trà thanh mát kết hợp cùng đào tươi thơm ngọt.</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Trà xoài chanh dây</span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">45.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Mango passion fruit tea</span>
+                        <span class="menu-desc lang-vi">Hương vị xoài chín mọng hòa cùng chanh dây chua ngọt.</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Trà ổi hồng thanh long</span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">45.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Pink guava dragon fruit tea</span>
+                        <span class="menu-desc lang-vi">Trà ổi hồng kết hợp thanh long đỏ tươi sạch mát.</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Trà dưa lưới hoàng kim</span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">45.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Golden melon tea</span>
+                        <span class="menu-desc lang-vi">Trà dưa lưới hoàng kim ngọt thanh giải nhiệt cực đã.</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Trà lựu đỏ nhiệt đới</span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">45.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Pomegranate tea</span>
+                        <span class="menu-desc lang-vi">Trà lựu đỏ mọng nước giàu vitamin, tươi mát.</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Trà mãng cầu xiêm tươi</span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">45.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Soursop tea</span>
+                        <span class="menu-desc lang-vi">Trà thơm nhẹ cùng mãng cầu xiêm chua ngọt tự nhiên.</span>
+                    </div>
+                </div>
+
+                <!-- 4. Matcha -->
+                <div class="menu-category reveal">
+                    <div class="category-title">
+                        <div class="category-num">4</div>
+                        <span class="lang-en">Matcha</span>
+                        <span class="lang-vi">Matcha</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Matcha Latte</span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">39.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Premium Japanese matcha with fresh milk.</span>
+                        <span class="menu-desc lang-vi">Trà xanh Nhật Bản thượng hạng kết hợp sữa tươi.</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Matcha kem muối</span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">45.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Matcha latte with salted cream</span>
+                        <span class="menu-desc lang-vi">Matcha Latte đậm vị phủ lớp kem mặn béo ngậy.</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Matcha kem trứng</span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">45.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Matcha latte with egg cream</span>
+                        <span class="menu-desc lang-vi">Matcha quyện cùng lớp kem trứng đánh bông siêu mịn.</span>
+                    </div>
+                </div>
+
+                <!-- 5. Yogurt Smoothies -->
+                <div class="menu-category reveal">
+                    <div class="category-title">
+                        <div class="category-num">5</div>
+                        <span class="lang-en">Yogurt Smoothies</span>
+                        <span class="lang-vi">Đá Xay - Yogurt Smoothies</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Yogurt Smoothies Dâu</span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">45.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Strawberry yogurt smoothie</span>
+                        <span class="menu-desc lang-vi">Sữa chua đá xay cùng dâu tây chua ngọt thơm ngon.</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Yogurt Smoothies việt quất</span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">45.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Blueberry yogurt smoothie</span>
+                        <span class="menu-desc lang-vi">Sữa chua sánh mịn xay quyện cùng việt quất đậm vị.</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Yogurt Smoothies ổi hồng</span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">45.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Pink guava yogurt smoothie</span>
+                        <span class="menu-desc lang-vi">Sữa chua kết hợp sốt ổi hồng nhiệt đới độc đáo.</span>
+                    </div>
+                </div>
+
+                <!-- 6. Smoothies & Juices -->
+                <div class="menu-category reveal">
+                    <div class="category-title">
+                        <div class="category-num">6</div>
+                        <span class="lang-en">Smoothies &amp; Juices</span>
+                        <span class="lang-vi">Sinh Tố &amp; Nước Ép</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Sinh tố Bơ dừa non</span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">45.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Avocado &amp; young coconut smoothie</span>
+                        <span class="menu-desc lang-vi">Sinh tố bơ chín dẻo xay cùng cơm dừa non béo ngậy.</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Sinh tố xoài dừa nhiệt đới</span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">45.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Mango &amp; coconut smoothie</span>
+                        <span class="menu-desc lang-vi">Sinh tố xoài chín cây kết hợp nước cốt dừa thơm phức.</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Sinh tố mãng cầu xiêm tươi</span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">45.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Soursop smoothie</span>
+                        <span class="menu-desc lang-vi">Mãng cầu tươi xay đá sánh đặc, chua dịu sảng khoái.</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Nước ép cam</span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">39.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Fresh orange juice, rich in vitamin C.</span>
+                        <span class="menu-desc lang-vi">Nước ép cam tươi nguyên chất giàu Vitamin C.</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Nước ép dứa</span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">39.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Pure pineapple juice, light and sweet.</span>
+                        <span class="menu-desc lang-vi">Nước ép thơm (dứa) nguyên chất ngọt thanh, mát lạnh.</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Nước ép ổi</span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">39.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Fresh guava juice.</span>
+                        <span class="menu-desc lang-vi">Nước ép ổi xanh tươi ngon, thanh lọc cơ thể.</span>
+                    </div>
+                </div>
+
+                <!-- 7. Hot Drinks & Others -->
+                <div class="menu-category reveal">
+                    <div class="category-title">
+                        <div class="category-num">7</div>
+                        <span class="lang-en">Hot Drinks &amp; Others</span>
+                        <span class="lang-vi">Đồ Uống Nóng &amp; Thức Uống Khác</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Cacao nóng</span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">39.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Rich, warming hot chocolate.</span>
+                        <span class="menu-desc lang-vi">Ca cao nóng đậm đà, ấm áp cho ngày mới.</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Trà gừng</span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">35.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Warming ginger tea, good for your health.</span>
+                        <span class="menu-desc lang-vi">Trà gừng ấm nồng, tốt cho sức khỏe.</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Nước suối</span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">10.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Bottled water</span>
+                        <span class="menu-desc lang-vi">Nước uống đóng chai tinh khiết.</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Bò húc</span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">20.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Red Bull (can)</span>
+                        <span class="menu-desc lang-vi">Nước tăng lực Bò Húc lon.</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <span class="menu-name">Pepsi</span>
+                            <span class="menu-dots" aria-hidden="true"></span>
+                            <span class="menu-price">20.000₫</span>
+                        </div>
+                        <span class="menu-desc lang-en">Chilled Pepsi (can)</span>
+                        <span class="menu-desc lang-vi">Nước ngọt Pepsi lon mát lạnh.</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Location -->
+    <section class="map-section" id="location">
+        <div class="container">
+            <h2 class="section-title reveal"><span class="lang-en">Find Our Garden</span><span class="lang-vi">Đường Đến Quán</span></h2>
+            <p class="map-note reveal">
+                <a class="map-link" href="https://maps.app.goo.gl/Q7o8hPhkJd2CoweL8?g_st=ic" target="_blank" rel="noopener">
+                    <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+                    <span class="lang-en">46 Loseby, An Hai, Son Tra, Da Nang </span>
+                    <span class="lang-vi">46 Loseby, An Hải, Sơn Trà, Đà Nẵng </span>
+                </a>
+                <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg>
+            </p>
+            <div class="map-container reveal">
+                <iframe
+           title="Map showing the location of Tien Coffee, 46 Loseby, An Hai, Son Tra, Da Nang"
+                    src="https://www.google.com/maps?q=46%20Loseby%2C%20An%20H%E1%BA%A3i%2C%20S%C6%A1n%20Tr%C3%A0%2C%20%C4%90%C3%A0%20N%E1%BA%B5ng&output=embed"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="cta-block">
+        <div class="container">
+            <h2 class="reveal"><span class="lang-en">Come &amp; Say Hello</span><span class="lang-vi">Gặp Gỡ &amp; Thưởng Thức</span></h2>
+            <p class="reveal">
+                <span class="lang-en">We can't wait to serve you the perfect cup!</span>
+                <span class="lang-vi">Tien Coffee luôn sẵn sàng chào đón bạn!</span>
+            </p>
+            <a href="tel:0342697551" class="btn reveal">
+                <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+                <span class="lang-en">Call &amp; Order Now — 034 269 7551</span>
+                <span class="lang-vi">Gọi Đặt Hàng Ngay — 034 269 7551</span>
+            </a>
+            <div class="social-footer reveal">
+                <a href="https://instagram.com/tien.coffee.shop" target="_blank" rel="noopener" class="social-link" style="color: #C13584;">
+                    <svg class="icon" aria-hidden="true"><use href="#i-ig"/></svg> Instagram
+                </a>
+                <a href="https://www.facebook.com/share/1DaXoe3VbJ/" target="_blank" rel="noopener" class="social-link" style="color: #1877F2;">
+                    <svg class="icon icon-filled" aria-hidden="true"><use href="#i-fb"/></svg> Facebook
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <strong>Tien Coffee</strong> — 46 Loseby, An Hải, Sơn Trà, Đà Nẵng ·
+        <a href="tel:0342697551" style="color:inherit">034 269 7551</a><br>
+        © <span id="year">2026</span> Tien Coffee. <span class="lang-en">All rights reserved.</span><span class="lang-vi">Mọi quyền được bảo lưu.</span>
+    </footer>
+
+    <script>
+        (function () {
+            var saved = null;
+            try { saved = localStorage.getItem('tc-lang'); } catch (e) {}
+            if (saved === 'en' || saved === 'vi') {
+                document.documentElement.lang = saved;
+            }
+            syncLangButtons();
+        })();
+
+        function setLang(lang) {
+            document.documentElement.lang = lang;
+            try { localStorage.setItem('tc-lang', lang); } catch (e) {}
+            syncLangButtons();
+        }
+
+        function syncLangButtons() {
+            var current = document.documentElement.lang;
+            document.querySelectorAll('.lang-btn').forEach(function (btn) {
+                var active = btn.dataset.lang === current;
+                btn.classList.toggle('active', active);
+                btn.setAttribute('aria-pressed', String(active));
+            });
+        }
+
+        // Solid topbar after scrolling past the top
+        window.addEventListener('scroll', function () {
+            var topbar = document.getElementById('topbar');
+            if (topbar) topbar.classList.toggle('scrolled', window.scrollY > 40);
+        }, { passive: true });
+
+        // Scroll-reveal animations
+        var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if ('IntersectionObserver' in window && !reduceMotion) {
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+            document.querySelectorAll('.reveal').forEach(function (el) { observer.observe(el); });
+        } else {
+            document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-visible'); });
+        }
+
+        // Footer year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
