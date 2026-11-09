@@ -54,96 +54,222 @@
     }
     </script>
 
-    <style>
-        :root {
-            --accent-olive: #6B8E23;
-            --olive-dark: #556B2F;
-            --olive-soft: #EFF3E4;
-            --coffee-dark: #3E2723;
-            --coffee-black: #271714;
-            --bg-natural: #F5F2EB;
-            --white-card: #FFFFFF;
-            --text-muted: #6d5c58;
-            --line: #EAE6DD;
-            --radius: 20px;
-            --shadow-card: 0 6px 18px rgba(62, 39, 35, 0.06);
-            --shadow-hover: 0 14px 32px rgba(62, 39, 35, 0.12);
-        }
+css
+<style>
+:root {
+    --accent-olive: #6B8E23;
+    --olive-dark: #556B2F;
+    --olive-soft: #EFF3E4;
+    --coffee-dark: #3E2723;
+    --coffee-black: #271714;
+    --bg-natural: #F5F2EB;
+    --white-card: #FFFFFF;
+    --text-muted: #6d5c58;
+    --line: #EAE6DD;
+    --radius: 20px;
+    --shadow-card: 0 6px 18px rgba(62, 39, 35, 0.06);
+    --shadow-hover: 0 14px 32px rgba(62, 39, 35, 0.12);
+}
 
-        * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
-        html { scroll-behavior: smooth; }
-        body {
-            font-family: 'Be Vietnam Pro', 'Roboto', sans-serif;
-            color: var(--coffee-dark);
-            background-color: var(--bg-natural);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-        /* subtle paper grain */
-        body::before {
-            content: "";
-            position: fixed;
-            inset: 0;
-            z-index: 1;
-            pointer-events: none;
-            opacity: 0.035;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-        }
-        h1, h2, h3 { font-family: 'Playfair Display', serif; color: var(--coffee-dark); }
-        img, video { display: block; max-width: 100%; }
-        .icon { width: 1.15em; height: 1.15em; flex: none; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; vertical-align: -0.2em; }
-        .icon-filled { fill: currentColor; stroke: none; }
-        a:focus-visible, button:focus-visible { outline: 2px solid var(--accent-olive); outline-offset: 3px; border-radius: 4px; }
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+    -webkit-tap-highlight-color: transparent; 
+}
 
-        .container { width: 100%; padding: 0 20px; max-width: 1200px; margin: 0 auto; }
-        section { padding: 72px 0; border-bottom: 1px solid var(--line); }
-        @media (min-width: 720px) { section { padding: 88px 0; } }
+html { 
+    scroll-behavior: smooth; 
+}
 
-        /* Language visibility */
-        html[lang="en"] .lang-vi { display: none !important; }
-        html[lang="vi"] .lang-en { display: none !important; }
+body {
+    font-family: 'Be Vietnam Pro', 'Roboto', sans-serif;
+    color: var(--coffee-dark);
+    background-color: var(--bg-natural);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
 
-        /* ===== Top navigation ===== */
-        .topbar {
-            position: fixed;
-            top: 0; left: 0; right: 0;
-            z-index: 100;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 16px;
-            padding: 10px 20px;
-            background: rgba(39, 23, 20, 0.55);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            transition: background 0.3s, box-shadow 0.3s;
-        }
-        .topbar.scrolled { background: rgba(39, 23, 20, 0.92); box-shadow: 0 4px 20px rgba(0,0,0,0.25); }
-        .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #fff; }
-        .brand img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; border: 1px solid rgba(255,255,255,0.35); }
-        .brand-name { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; letter-spacing: 0.5px; }
-        .topbar-nav { display: none; gap: 26px; }
-        .topbar-nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
-        .topbar-nav a:hover { color: #fff; }
-        .topbar-actions { display: flex; align-items: center; gap: 12px; }
-        .lang-switch { display: flex; gap: 6px; }
-        .lang-btn {
-            background: transparent; border: 1.5px solid rgba(255,255,255,0.4); color: #fff;
-            padding: 4px 12px; border-radius: 999px; cursor: pointer; font-size: 12.5px; font-weight: 700;
-            font-family: inherit; transition: all 0.2s;
-        }
-        .lang-btn.active { background-color: var(--accent-olive); border-color: var(--accent-olive); }
-        .topbar-call {
-            display: flex; align-items: center; justify-content: center;
-            width: 36px; height: 36px; border-radius: 50%;
-            background: var(--accent-olive); color: #fff; text-decoration: none;
-            transition: background 0.2s;
-        }
-        .topbar-call:hover { background: var(--olive-dark); }
-        @media (min-width: 860px) {
-            .topbar { padding: 12px 32px; }
-            .topbar-nav { display: flex; }
-        }
+/* Эффект текстуры бумаги — ИСПРАВЛЕН и оптимизирован */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.035;
+    /* Заменено #n на %23n для полной кроссбраузерности */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    /* Аппаратное ускорение для устранения лагов при скролле */
+    transform: translateZ(0); 
+    will-change: transform;
+}
+
+h1, h2, h3 { 
+    font-family: 'Playfair Display', serif; 
+    color: var(--coffee-dark); 
+}
+
+img, video { 
+    display: block; 
+    max-width: 100%; 
+}
+
+.icon { 
+    width: 1.15em; 
+    height: 1.15em; 
+    flex: none; 
+    stroke: currentColor; 
+    fill: none; 
+    stroke-width: 1.8; 
+    stroke-linecap: round; 
+    stroke-linejoin: round; 
+    vertical-align: -0.2em; 
+}
+
+.icon-filled { 
+    fill: currentColor; 
+    stroke: none; 
+}
+
+a:focus-visible, button:focus-visible { 
+    outline: 2px solid var(--accent-olive); 
+    outline-offset: 3px; 
+    border-radius: 4px; 
+}
+
+.container { 
+    width: 100%; 
+    padding: 0 20px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+section { 
+    padding: 72px 0; 
+    border-bottom: 1px solid var(--line); 
+}
+
+@media (min-width: 720px) { 
+    section { padding: 88px 0; } 
+}
+
+/* Языковые переключатели */
+html[lang="en"] .lang-vi { display: none !important; }
+html[lang="vi"] .lang-en { display: none !important; }
+
+/* ===== Навигационная панель (Topbar) ===== */
+.topbar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 10px 20px;
+    background: rgba(39, 23, 20, 0.55);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.topbar.scrolled { 
+    background: rgba(39, 23, 20, 0.92); 
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25); 
+}
+
+.brand { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    text-decoration: none; 
+    color: #fff; 
+}
+
+.brand img { 
+    width: 34px; 
+    height: 34px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 1px solid rgba(255,255,255,0.35); 
+}
+
+.brand-name { 
+    font-family: 'Playfair Display', serif; 
+    font-size: 18px; 
+    font-weight: 700; 
+    letter-spacing: 0.5px; 
+}
+
+.topbar-nav { 
+    display: none; 
+    gap: 26px; 
+}
+
+.topbar-nav a { 
+    color: rgba(255,255,255,0.85); 
+    text-decoration: none; 
+    font-size: 14px; 
+    font-weight: 500; 
+    transition: color 0.2s; 
+}
+
+.topbar-nav a:hover { 
+    color: #fff; 
+}
+
+.topbar-actions { 
+    display: flex; 
+    align-items: center; 
+    gap: 12px; 
+}
+
+.lang-switch { 
+    display: flex; 
+    gap: 6px; 
+}
+
+.lang-btn {
+    background: transparent; 
+    border: 1.5px solid rgba(255,255,255,0.4); 
+    color: #fff;
+    padding: 4px 12px; 
+    border-radius: 999px; 
+    cursor: pointer; 
+    font-size: 12.5px; 
+    font-weight: 700;
+    font-family: inherit; 
+    transition: all 0.2s;
+}
+
+.lang-btn.active { 
+    background-color: var(--accent-olive); 
+    border-color: var(--accent-olive); 
+}
+
+.topbar-call {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    width: 36px; 
+    height: 36px; 
+    border-radius: 50%;
+    background: var(--accent-olive); 
+    color: #fff; 
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.topbar-call:hover { 
+    background: var(--olive-dark); 
+}
+
+@media (min-width: 860px) {
+    .topbar { padding: 12px 32px; }
+    .topbar-nav { display: flex; }
+}
+</style>
 
         /* ===== Buttons ===== */
         .btn {
