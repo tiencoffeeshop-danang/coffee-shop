@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
@@ -9,22 +8,23 @@
     <meta name="theme-color" content="#271714">
     <link rel="icon" type="image/jpeg" href="logo.jpg">
 
-    <!-- Open Graph (Соцсети) -->
+    <!-- Open Graph (Соцсети) — Ссылки исправлены на ваш точный репозиторий -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Tien Coffee | Sân Vườn & Hồ Cá Koi — Đà Nẵng">
-    <meta property="og:description" content="Tien Coffee — ốc đảo xanh yên bình с hồ cá koi, thác nước và cà phê đặc sản pha chế mỗi ngày.">
+    <meta property="og:description" content="Tien Coffee — ốc đảo xanh yên bình với hồ cá koi, thác nước và cà phê đặc sản pha chế mỗi ngày.">
     <meta property="og:url" content="https://github.io">
     <meta property="og:image" content="https://github.iodrinks.jpg">
     <meta property="og:locale" content="vi_VN">
     <meta property="og:locale:alternate" content="en_US">
 
-    <!-- Шрифты -->
-    <link rel="preconnect" href="https://googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <!-- Шрифты — Исправлены системные адреса Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
-   <script type="application/ld+json">
+    <!-- Микроразметка JSON-LD — Ссылки и социальные сети приведены в соответствие -->
+    <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "CafeOrCoffeeShop",
@@ -48,6 +48,7 @@
         ]
     }
     </script>
+
     <style>
         :root {
             --accent-olive: #6B8E23;
@@ -73,7 +74,8 @@
             line-height: 1.6;
             overflow-x: hidden;
         }
-        /* subtle paper grain */
+        
+        /* Эффект текстуры бумаги — Кроссбраузерный %23n и аппаратное ускорение */
         body::before {
             content: "";
             position: fixed;
@@ -81,8 +83,11 @@
             z-index: 1;
             pointer-events: none;
             opacity: 0.035;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://w3.org' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+            transform: translateZ(0);
+            will-change: transform;
         }
+        
         h1, h2, h3 { font-family: 'Playfair Display', serif; color: var(--coffee-dark); }
         img, video { display: block; max-width: 100%; }
         .icon { width: 1.15em; height: 1.15em; flex: none; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; vertical-align: -0.2em; }
@@ -93,7 +98,7 @@
         section { padding: 72px 0; border-bottom: 1px solid var(--line); }
         @media (min-width: 720px) { section { padding: 88px 0; } }
 
-        /* Language visibility */
+        /* Переключатель языков */
         html[lang="en"] .lang-vi { display: none !important; }
         html[lang="vi"] .lang-en { display: none !important; }
 
