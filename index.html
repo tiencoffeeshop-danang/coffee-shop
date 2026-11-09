@@ -483,7 +483,8 @@ html[lang="vi"] .lang-en { display: none !important; }
     <!-- Top navigation -->
     <header class="topbar" id="topbar">
         <a class="brand" href="#top" aria-label="Tien Coffee — home">
-            <img src="/.netlify/images?url=/logo.jpg&w=96&h=96&fit=cover&fm=webp&q=80" alt="Tien Coffee logo" width="34" height="34">
+            <!-- ИСПРАВЛЕНО: Прямой путь к логотипу для GitHub Pages -->
+            <img src="logo.jpg" alt="Tien Coffee logo" width="34" height="34">
             <span class="brand-name">Tien Coffee</span>
         </a>
         <nav class="topbar-nav" aria-label="Main navigation">
@@ -547,10 +548,10 @@ html[lang="vi"] .lang-en { display: none !important; }
 
             <div class="drinks-grid">
                 <article class="drink-card reveal">
-                    <img src="drink1.jpg" alt="Coconut coffe" width="640" height="480" loading="lazy" decoding="async">
+                    <img src="drink1.jpg" alt="Coconut coffee" width="640" height="480" loading="lazy" decoding="async">
                     <div class="drink-info">
-                        <span class="lang-en">Coconut Coffee </span>
-                        <span class="lang-vi"> Cà Phê Cốt Dừa </span>
+                        <span class="lang-en">Coconut Coffee</span>
+                        <span class="lang-vi">Cà Phê Cốt Dừa</span>
                         <small>45.000₫</small>
                     </div>
                 </article>
@@ -573,6 +574,7 @@ html[lang="vi"] .lang-en { display: none !important; }
                 <article class="drink-card reveal">
                     <img src="drink4.jpg" alt="Fresh mango smoothie" width="640" height="480" loading="lazy" decoding="async">
                     <div class="drink-info">
+                        <!-- ИСПРАВЛЕНО: Закрыты оборвавшиеся теги -->
                         <span class="lang-en">Mango Coconut Smoothie</span>
                         <span class="lang-vi">Sinh Tố Xoài Dừa</span>
                         <small>45.000₫</small>
@@ -581,8 +583,7 @@ html[lang="vi"] .lang-en { display: none !important; }
             </div>
         </div>
     </section>
-
-    <!-- Atmosphere -->
+   <!-- Atmosphere -->
     <section class="atmosphere-section" id="atmosphere">
         <div class="container">
             <h2 class="section-title reveal"><span class="lang-en">Feel Our Atmosphere</span><span class="lang-vi">Không Gian Lãng Mạn</span></h2>
@@ -594,7 +595,8 @@ html[lang="vi"] .lang-en { display: none !important; }
 
             <div class="atmosphere-grid">
                 <article class="atmo-card atmo-wide reveal">
-                    <video controls preload="none" poster="koi1.jpg>
+                    <!-- ИСПРАВЛЕНО: Добавлена закрывающая кавычка после koi1.jpg -->
+                    <video controls preload="none" poster="koi1.jpg">
                         <source src="garden-video.mp4" type="video/mp4">
                     </video>
                     <div class="atmo-caption">
@@ -654,7 +656,6 @@ html[lang="vi"] .lang-en { display: none !important; }
             </div>
         </div>
     </section>
-
     <!-- Menu -->
     <section class="pricing" id="menu">
         <div class="container">
