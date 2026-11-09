@@ -1070,24 +1070,10 @@
         © <span id="year">2026</span> Tien Coffee. <span class="lang-en">All rights reserved.</span><span class="lang-vi">Mọi quyền được bảo lưu.</span>
     </footer>
 
-    <script>
-        (function () {
-            var saved = null;
-            try { saved = localStorage.getItem('tc-lang'); } catch (e) {}
-            if (saved === 'en' || saved === 'vi') {
-                document.documentElement.lang = saved;
-            }
-            syncLangButtons();
-        })();
-
-        function setLang(lang) {
-            document.documentElement.lang = lang;
-            try { localStorage.setItem('tc-lang', lang); } catch (e) {}
-            syncLangButtons();
-        }
-
+   <script>
+        // Объявляем функцию синхронизации кнопок
         function syncLangButtons() {
-            var current = document.documentElement.lang;
+            var current = document.documentElement.lang || 'vi';
             document.querySelectorAll('.lang-btn').forEach(function (btn) {
                 var active = btn.dataset.lang === current;
                 btn.classList.toggle('active', active);
@@ -1095,13 +1081,34 @@
             });
         }
 
-        // Solid topbar after scrolling past the top
+        // Переключение языка при клике
+        function setLang(lang) {
+            document.documentElement.lang = lang;
+            try { localStorage.setItem('tc-lang', lang); } catch (e) {}
+            syncLangButtons();
+        }
+
+        // Инициализация сохраненного языка (ИСПРАВЛЕНО: вызывается после объявления функций)
+        (function () {
+            var saved = null;
+            try { saved = localStorage.getItem('tc-lang'); } catch (e) {}
+            if (saved === 'en' || saved === 'vi') {
+                document.documentElement.lang = saved;
+            } else {
+                document.documentElement.lang = 'vi'; // Язык по умолчанию — вьетнамский
+            }
+            syncLangButtons();
+        })();
+
+        // Изменение прозрачности шапки при скролле
         window.addEventListener('scroll', function () {
             var topbar = document.getElementById('topbar');
-            if (topbar) topbar.classList.toggle('scrolled', window.scrollY > 40);
+            if (topbar) {
+                topbar.classList.toggle('scrolled', window.scrollY > 40);
+            }
         }, { passive: true });
 
-        // Scroll-reveal animations
+        // Анимации появления элементов при прокрутке (Scroll-reveal)
         var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
         if ('IntersectionObserver' in window && !reduceMotion) {
             var observer = new IntersectionObserver(function (entries) {
@@ -1112,13 +1119,17 @@
                     }
                 });
             }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+            
             document.querySelectorAll('.reveal').forEach(function (el) { observer.observe(el); });
         } else {
             document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-visible'); });
         }
 
-        // Footer year
-        document.getElementById('year').textContent = new Date().getFullYear();
+        // Автоматическая установка текущего года в футере
+        var yearEl = document.getElementById('year');
+        if (yearEl) {
+            yearEl.textContent = new Date().getFullYear();
+        }
     </script>
 </body>
 </html>
