@@ -319,6 +319,102 @@ html[lang="ru"] :is(.lang-en, .lang-vi, .lang-ko, .lang-zh) {
             }
         }
 
+/* =========================================
+   TIEN COFFEE — BUTTON DESIGN
+========================================= */
+
+/* Main Button — Order / Menu */
+.btn {
+    background-color: var(--accent-olive);
+    color: #ffffff;
+    border: 1px solid var(--accent-olive);
+    box-shadow: 0 6px 18px rgba(68, 82, 53, 0.18);
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
+
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--olive-dark);
+    border-color: var(--olive-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(68, 82, 53, 0.24);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 10px rgba(68, 82, 53, 0.16);
+}
+
+/* Ghost Button — Call / Video Hero */
+.btn-ghost {
+    border: 1.5px solid rgba(255, 255, 255, 0.65);
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.06);
+
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+    cursor: pointer;
+}
+
+.btn-ghost:hover {
+    background: rgba(255, 255, 255, 0.16);
+    border-color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.btn-ghost:active {
+    transform: translateY(0);
+}
+
+/* Keyboard Accessibility */
+.btn:focus-visible,
+.btn-ghost:focus-visible {
+    outline: 2px solid var(--accent-terracotta);
+    outline-offset: 4px;
+}
+
+/* Mobile Hero Buttons */
+@media (max-width: 576px) {
+    .hero-cta {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        max-width: 340px;
+        margin: 0 auto;
+    }
+
+    .hero-cta .btn,
+    .hero-cta .btn-ghost {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* Reduced Motion Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .btn,
+    .btn-ghost {
+        transition: none;
+    }
+
+    .btn:hover,
+    .btn-ghost:hover {
+        transform: none;
+    }
+}
+
         /* ===== Hero ===== */
         .hero {
             position: relative; text-align: center; color: #fff; overflow: hidden;
