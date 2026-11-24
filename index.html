@@ -77,32 +77,70 @@
   ]
 }
 </script>
-    <style>
-        :root {
-            --accent-olive: #6B8E23;
-            --olive-dark: #556B2F;
-            --olive-soft: #EFF3E4;
-            --coffee-dark: #3E2723;
-            --coffee-black: #271714;
-            --bg-natural: #F5F2EB;
-            --white-card: #FFFFFF;
-            --text-muted: #6d5c58;
-            --line: #EAE6DD;
-            --radius: 20px;
-            --shadow-card: 0 6px 18px rgba(62, 39, 35, 0.06);
-            --shadow-hover: 0 14px 32px rgba(62, 39, 35, 0.12);
-        }
 
-        * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
-        html { scroll-behavior: smooth; }
-        body {
-            font-family: 'Be Vietnam Pro', 'Roboto', sans-serif;
-            color: var(--coffee-dark);
-            background-color: var(--bg-natural);
-            line-height: 1.6;
-            overflow-x: hidden;
+<style>
+    :root {
+        /* Natural Zen — Main Colors */
+        --accent-olive: #687653;
+        --olive-dark: #536343;
+        --olive-soft: #E9EDE3;
+
+        /* Coffee Colors */
+        --coffee-dark: #271714;
+        --coffee-black: #1D1210;
+
+        /* Background */
+        --bg-natural: #F5F0E7;
+        --white-card: #FAF8F3;
+
+        /* Text */
+        --text-muted: #82766B;
+
+        /* Borders */
+        --line: #DED6C9;
+
+        /* Accent Colors */
+        --accent-terracotta: #B96F54;
+        --accent-sage: #B7C9B0;
+
+        /* Layout */
+        --radius: 14px;
+
+        /* Shadows */
+        --shadow-card: 0 6px 18px rgba(39, 23, 20, 0.06);
+        --shadow-hover: 0 14px 32px rgba(39, 23, 20, 0.12);
+    }
+
+    /* Global Reset */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    /* Smooth Scrolling */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* Main Body */
+    body {
+        font-family: 'Be Vietnam Pro', 'Roboto', sans-serif;
+        color: var(--coffee-dark);
+        background-color: var(--bg-natural);
+        line-height: 1.7;
+        overflow-x: hidden;
+    }
+
+    /* Accessibility */
+    @media (prefers-reduced-motion: reduce) {
+        html {
+            scroll-behavior: auto;
         }
-        
+    }
+</style>
+
    
 /* =========================================
    TIEN COFFEE — JAPANESE ZEN DESIGN
