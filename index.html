@@ -99,8 +99,12 @@
         @media (min-width: 720px) { section { padding: 88px 0; } }
 
         /* Переключатель языков */
-        html[lang="en"] .lang-vi { display: none !important; }
-        html[lang="vi"] .lang-en { display: none !important; }
+        html[lang="en"] :is(.lang-vi, .lang-ko, .lang-zh, .lang-ru),
+html[lang="vi"] :is(.lang-en, .lang-ko, .lang-zh, .lang-ru),
+html[lang="ko"] :is(.lang-en, .lang-vi, .lang-zh, .lang-ru),
+html[lang="zh"] :is(.lang-en, .lang-vi, .lang-ko, .lang-ru),
+html[lang="ru"] :is(.lang-en, .lang-vi, .lang-ko, .lang-zh) {
+    display: none !important;
 
         /* ===== Top navigation ===== */
         .topbar {
@@ -502,9 +506,12 @@
             <a href="#location"><span class="lang-en">Location</span><span class="lang-vi">Đường Đến</span></a>
         </nav>
         <div class="topbar-actions">
-            <div class="lang-switch" role="group" aria-label="Language">
+           <div class="lang-switch" role="group" aria-label="Language">
                 <button class="lang-btn" type="button" data-lang="en" onclick="setLang('en')" aria-pressed="false">EN</button>
                 <button class="lang-btn active" type="button" data-lang="vi" onclick="setLang('vi')" aria-pressed="true">VN</button>
+                <button class="lang-btn" type="button" data-lang="ko" onclick="setLang('ko')" aria-pressed="false">KR</button>
+                <button class="lang-btn" type="button" data-lang="zh" onclick="setLang('zh')" aria-pressed="false">CN</button>
+                <button class="lang-btn" type="button" data-lang="ru" onclick="setLang('ru')" aria-pressed="false">RU</button>
             </div>
             <a class="topbar-call" href="tel:0342697551" aria-label="Call Tien Coffee">
                 <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
