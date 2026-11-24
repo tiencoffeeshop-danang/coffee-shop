@@ -70,11 +70,12 @@
     "addressCountry": "VN"
   },
   "hasMap": "https://www.google.com/maps?q=46%20Loseby%2C%20An%20H%E1%BA%A3i%2C%20S%C6%A1n%20Tr%C3%A0%2C%20%C4%90%C3%A0%20N%E1%BA%B5ng",
-  "sameAs": [
-    "https://instagram.com/tien.coffee.shop",
-    "https://www.facebook.com/share/1DaXoe3VbJ/"
-         "https://www.threads.com/@tien.coffee.shop"
-  ]
+"sameAs": [
+  "https://instagram.com/tien.coffee.shop",
+  "https://www.facebook.com/share/1DaXoe3VbJ/",
+  "https://www.threads.com/@tien.coffee.shop"
+]
+
 }
 </script>
 
@@ -142,11 +143,12 @@
 </style>
 
    
+
 /* =========================================
    TIEN COFFEE — JAPANESE ZEN DESIGN
-   ========================================= */
+========================================= */
 
-/* Paper Texture Effect */
+/* Paper Texture */
 body {
     position: relative;
 }
@@ -157,7 +159,7 @@ body::before {
     inset: 0;
     z-index: 0;
     pointer-events: none;
-    opacity: 0.035;
+    opacity: 0.025;
 
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 
@@ -170,7 +172,7 @@ h1, h2, h3 {
     color: var(--coffee-dark);
 }
 
-/* Responsive Images and Videos */
+/* Images and Videos */
 img, video {
     display: block;
     max-width: 100%;
@@ -195,7 +197,7 @@ img, video {
     stroke: none;
 }
 
-/* Keyboard Accessibility */
+/* Accessibility */
 a:focus-visible,
 button:focus-visible {
     outline: 2px solid var(--accent-olive);
@@ -203,7 +205,7 @@ button:focus-visible {
     border-radius: 4px;
 }
 
-/* Main Container */
+/* Container */
 .container {
     width: 100%;
     padding: 0 20px;
@@ -222,6 +224,13 @@ section {
         padding: 88px 0;
     }
 }
+
+/* Content above paper texture */
+body > * {
+    position: relative;
+    z-index: 1;
+}
+
 
 /* =========================================
    LANGUAGE SWITCHER
@@ -588,16 +597,31 @@ html[lang="ru"] :is(.lang-en, .lang-vi, .lang-ko, .lang-zh) {
 }
 
 
+
 /* =========================================
-   TIEN COFFEE — BUTTON DESIGN
+   TIEN COFFEE — NATURAL ZEN BUTTON DESIGN
 ========================================= */
 
-/* Main Button — Order / Menu */
-.btn {
-    background-color: var(--accent-olive);
-    color: #ffffff;
-    border: 1px solid var(--accent-olive);
-    box-shadow: 0 6px 18px rgba(68, 82, 53, 0.18);
+/* Common Button Styles */
+.btn,
+.btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 14px 28px;
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
+    text-decoration: none;
+
+    border-radius: 999px;
+    box-sizing: border-box;
+    cursor: pointer;
 
     transition:
         background-color 0.3s ease,
@@ -605,14 +629,24 @@ html[lang="ru"] :is(.lang-en, .lang-vi, .lang-ko, .lang-zh) {
         border-color 0.3s ease,
         box-shadow 0.3s ease,
         transform 0.3s ease;
+}
 
-    cursor: pointer;
+/* Main Button — Order / Menu */
+.btn {
+    background-color: var(--accent-olive);
+    color: #ffffff;
+
+    border: 1px solid var(--accent-olive);
+
+    box-shadow: 0 6px 18px rgba(68, 82, 53, 0.18);
 }
 
 .btn:hover {
     background-color: var(--olive-dark);
     border-color: var(--olive-dark);
+
     transform: translateY(-2px);
+
     box-shadow: 0 10px 24px rgba(68, 82, 53, 0.24);
 }
 
@@ -623,22 +657,18 @@ html[lang="ru"] :is(.lang-en, .lang-vi, .lang-ko, .lang-zh) {
 
 /* Ghost Button — Call / Video Hero */
 .btn-ghost {
-    border: 1.5px solid rgba(255, 255, 255, 0.65);
+    background: rgba(39, 23, 20, 0.35);
     color: #ffffff;
-    background: rgba(255, 255, 255, 0.06);
 
-    transition:
-        background-color 0.3s ease,
-        border-color 0.3s ease,
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+    border: 1.5px solid rgba(255, 255, 255, 0.85);
 
-    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10);
 }
 
 .btn-ghost:hover {
-    background: rgba(255, 255, 255, 0.16);
+    background: rgba(39, 23, 20, 0.65);
     border-color: #ffffff;
+
     transform: translateY(-2px);
 }
 
@@ -658,7 +688,9 @@ html[lang="ru"] :is(.lang-en, .lang-vi, .lang-ko, .lang-zh) {
     .hero-cta {
         display: flex;
         flex-direction: column;
+        align-items: stretch;
         gap: 12px;
+
         width: 100%;
         max-width: 340px;
         margin: 0 auto;
@@ -667,7 +699,6 @@ html[lang="ru"] :is(.lang-en, .lang-vi, .lang-ko, .lang-zh) {
     .hero-cta .btn,
     .hero-cta .btn-ghost {
         width: 100%;
-        box-sizing: border-box;
     }
 }
 
