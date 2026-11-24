@@ -8,7 +8,7 @@
     <meta name="theme-color" content="#271714">
     <link rel="icon" type="image/jpeg" href="logo.jpg">
 
-    <!-- Open Graph (Соцсети) — Ссылки исправлены на ваш точный репозиторий -->
+    <!-- Open Graph (Соцсети) -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Tien Coffee | Sân Vườn & Hồ Cá Koi — Đà Nẵng">
     <meta property="og:description" content="Tien Coffee — ốc đảo xanh yên bình với hồ cá koi, thác nước và cà phê đặc sản pha chế mỗi ngày.">
@@ -17,14 +17,14 @@
     <meta property="og:locale" content="vi_VN">
     <meta property="og:locale:alternate" content="en_US">
 
-    <!-- Шрифты — Исправлены системные адреса Google Fonts -->
+    <!-- Шрифты -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+
 
     <!-- Микроразметка JSON-LD — Ссылки и социальные сети приведены в соответствие -->
-    <script type="application/ld+json">
+  <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "CafeOrCoffeeShop",
@@ -41,14 +41,13 @@
             "addressRegion": "Sơn Trà",
             "addressCountry": "VN"
         },
-        "hasMap": "https://maps.app.goo.gl/yjayDcvZRYSWKZA88",
+        "hasMap": "https://goo.gl",
         "sameAs": [
             "https://instagram.com",
             "https://facebook.com"
         ]
     }
     </script>
-
     <style>
         :root {
             --accent-olive: #6B8E23;
@@ -75,7 +74,7 @@
             overflow-x: hidden;
         }
         
-        /* Эффект текстуры бумаги — Кроссбраузерный %23n и аппаратное ускорение */
+        /* Эффект текстуры бумаги */
         body::before {
             content: "";
             position: fixed;
@@ -98,15 +97,17 @@
         section { padding: 72px 0; border-bottom: 1px solid var(--line); }
         @media (min-width: 720px) { section { padding: 88px 0; } }
 
-        /* Переключатель языков */
+        /* Переключатель языков (ИСПРАВЛЕНО: добавлена закрывающая скобка) */
         html[lang="en"] :is(.lang-vi, .lang-ko, .lang-zh, .lang-ru),
-html[lang="vi"] :is(.lang-en, .lang-ko, .lang-zh, .lang-ru),
-html[lang="ko"] :is(.lang-en, .lang-vi, .lang-zh, .lang-ru),
-html[lang="zh"] :is(.lang-en, .lang-vi, .lang-ko, .lang-ru),
-html[lang="ru"] :is(.lang-en, .lang-vi, .lang-ko, .lang-zh) {
-    display: none !important;
+        html[lang="vi"] :is(.lang-en, .lang-ko, .lang-zh, .lang-ru),
+        html[lang="ko"] :is(.lang-en, .lang-vi, .lang-zh, .lang-ru),
+        html[lang="zh"] :is(.lang-en, .lang-vi, .lang-ko, .lang-ru),
+        html[lang="ru"] :is(.lang-en, .lang-vi, .lang-ko, .lang-zh) {
+            display: none !important;
+        }
 
-        /* ===== Top navigation ===== */
+
+            /* ===== Top navigation ===== */
         .topbar {
             position: fixed;
             top: 0; left: 0; right: 0;
@@ -114,31 +115,31 @@ html[lang="ru"] :is(.lang-en, .lang-vi, .lang-ko, .lang-zh) {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 16px;
-            padding: 10px 20px;
+            gap: 10px;
+            padding: 10px 14px;
             background: rgba(39, 23, 20, 0.55);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             transition: background 0.3s, box-shadow 0.3s;
         }
         .topbar.scrolled { background: rgba(39, 23, 20, 0.92); box-shadow: 0 4px 20px rgba(0,0,0,0.25); }
-        .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #fff; }
-        .brand img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; border: 1px solid rgba(255,255,255,0.35); }
-        .brand-name { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; letter-spacing: 0.5px; }
+        .brand { display: flex; align-items: center; gap: 8px; text-decoration: none; color: #fff; flex-shrink: 0; }
+        .brand img { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; border: 1px solid rgba(255,255,255,0.35); }
+        .brand-name { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 700; letter-spacing: 0.3px; }
         .topbar-nav { display: none; gap: 26px; }
         .topbar-nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
         .topbar-nav a:hover { color: #fff; }
-        .topbar-actions { display: flex; align-items: center; gap: 12px; }
-        .lang-switch { display: flex; gap: 6px; }
+        .topbar-actions { display: flex; align-items: center; gap: 8px; }
+        .lang-switch { display: flex; gap: 4px; flex-wrap: nowrap; }
         .lang-btn {
             background: transparent; border: 1.5px solid rgba(255,255,255,0.4); color: #fff;
-            padding: 4px 12px; border-radius: 999px; cursor: pointer; font-size: 12.5px; font-weight: 700;
+            padding: 3px 7px; border-radius: 999px; cursor: pointer; font-size: 11px; font-weight: 700;
             font-family: inherit; transition: all 0.2s;
         }
         .lang-btn.active { background-color: var(--accent-olive); border-color: var(--accent-olive); }
         .topbar-call {
-            display: flex; align-items: center; justify-content: center;
-            width: 36px; height: 36px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+            width: 34px; height: 34px; border-radius: 50%;
             background: var(--accent-olive); color: #fff; text-decoration: none;
             transition: background 0.2s;
         }
@@ -146,15 +147,17 @@ html[lang="ru"] :is(.lang-en, .lang-vi, .lang-ko, .lang-zh) {
         @media (min-width: 860px) {
             .topbar { padding: 12px 32px; }
             .topbar-nav { display: flex; }
+            .lang-btn { padding: 4px 11px; font-size: 12.5px; }
+            .brand-name { font-size: 18px; }
         }
 
-       /* ===== Buttons ===== */
+        /* ===== Buttons ===== */
         .btn, .btn-ghost {
             display: inline-flex; 
             align-items: center; 
             justify-content: center; 
             gap: 10px;
-            padding: 14px 28px; /* Одинаковая высота для обеих кнопок */
+            padding: 14px 28px;
             font-size: 15px; 
             font-weight: 600; 
             text-decoration: none;
@@ -165,7 +168,19 @@ html[lang="ru"] :is(.lang-en, .lang-vi, .lang-ko, .lang-zh) {
             box-sizing: border-box;
         }
 
-        /* Главная кнопка (Заказать / Меню) */
+        .btn {
+            background-color: var(--accent-olive); 
+            color: #ffffff;
+            border: none;
+            box-shadow: 0 8px 20px rgba(107, 142, 35, 0.28);
+        }
+        .btn:hover {
+            background-color: var(--olive-dark);
+            transform: translateY(-2px);
+        }
+
+
+             /* Главная кнопка (Заказать / Меню) */
         .btn {
             background-color: var(--accent-olive); 
             color: #ffffff;
@@ -180,6 +195,7 @@ html[lang="ru"] :is(.lang-en, .lang-vi, .lang-ko, .lang-zh) {
         .btn:active {
             transform: translateY(0);
         }
+
 
         /* Призрачная кнопка для видео-заставки (Позвонить) */
         .btn-ghost {
