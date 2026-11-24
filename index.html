@@ -103,37 +103,100 @@
             overflow-x: hidden;
         }
         
-        /* Эффект текстуры бумаги */
-        body::before {
-            content: "";
-            position: fixed;
-            inset: 0;
-            z-index: 1;
-            pointer-events: none;
-            opacity: 0.035;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://w3.org' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-            transform: translateZ(0);
-            will-change: transform;
-        }
-        
-        h1, h2, h3 { font-family: 'Playfair Display', serif; color: var(--coffee-dark); }
-        img, video { display: block; max-width: 100%; }
-        .icon { width: 1.15em; height: 1.15em; flex: none; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; vertical-align: -0.2em; }
-        .icon-filled { fill: currentColor; stroke: none; }
-        a:focus-visible, button:focus-visible { outline: 2px solid var(--accent-olive); outline-offset: 3px; border-radius: 4px; }
+   
+/* =========================================
+   TIEN COFFEE — JAPANESE ZEN DESIGN
+   ========================================= */
 
-        .container { width: 100%; padding: 0 20px; max-width: 1200px; margin: 0 auto; }
-        section { padding: 72px 0; border-bottom: 1px solid var(--line); }
-        @media (min-width: 720px) { section { padding: 88px 0; } }
+/* Paper Texture Effect */
+body {
+    position: relative;
+}
 
-        /* Переключатель языков (ИСПРАВЛЕНО: добавлена закрывающая скобка) */
-        html[lang="en"] :is(.lang-vi, .lang-ko, .lang-zh, .lang-ru),
-        html[lang="vi"] :is(.lang-en, .lang-ko, .lang-zh, .lang-ru),
-        html[lang="ko"] :is(.lang-en, .lang-vi, .lang-zh, .lang-ru),
-        html[lang="zh"] :is(.lang-en, .lang-vi, .lang-ko, .lang-ru),
-        html[lang="ru"] :is(.lang-en, .lang-vi, .lang-ko, .lang-zh) {
-            display: none !important;
-        }
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.035;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+
+    background-repeat: repeat;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--coffee-dark);
+}
+
+/* Responsive Images and Videos */
+img, video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* SVG Icons */
+.icon {
+    width: 1.15em;
+    height: 1.15em;
+    flex: none;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: -0.2em;
+}
+
+.icon-filled {
+    fill: currentColor;
+    stroke: none;
+}
+
+/* Keyboard Accessibility */
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--accent-olive);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+/* Main Container */
+.container {
+    width: 100%;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Sections */
+section {
+    padding: 72px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+@media (min-width: 720px) {
+    section {
+        padding: 88px 0;
+    }
+}
+
+/* =========================================
+   LANGUAGE SWITCHER
+   Vietnamese / English / Korean / Chinese / Russian
+   ========================================= */
+
+html[lang="en"] :is(.lang-vi, .lang-ko, .lang-zh, .lang-ru),
+html[lang="vi"] :is(.lang-en, .lang-ko, .lang-zh, .lang-ru),
+html[lang="ko"] :is(.lang-en, .lang-vi, .lang-zh, .lang-ru),
+html[lang="zh"] :is(.lang-en, .lang-vi, .lang-ko, .lang-ru),
+html[lang="ru"] :is(.lang-en, .lang-vi, .lang-ko, .lang-zh) {
+    display: none !important;
+}
 
 
             /* ===== Top navigation ===== */
