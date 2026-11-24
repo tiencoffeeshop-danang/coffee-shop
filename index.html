@@ -140,7 +140,7 @@
             scroll-behavior: auto;
         }
     }
-</style>
+
 
    
 
@@ -416,192 +416,6 @@ html[lang="ru"] :is(.lang-en, .lang-vi, .lang-ko, .lang-zh) {
    TIEN COFFEE — BUTTONS
 ========================================= */
 
-.btn,
-.btn-ghost {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-
-    padding: 14px 28px;
-
-    font-size: 15px;
-    font-weight: 600;
-    font-family: inherit;
-
-    text-decoration: none;
-    text-align: center;
-
-    border-radius: 999px;
-    box-sizing: border-box;
-
-    cursor: pointer;
-
-    transition:
-        background-color 0.3s ease,
-        color 0.3s ease,
-        transform 0.3s ease,
-        box-shadow 0.3s ease,
-        border-color 0.3s ease;
-}
-
-/* Main Button — Order / Menu */
-
-.btn {
-    background-color: var(--accent-olive);
-    color: #ffffff;
-
-    border: 1px solid var(--accent-olive);
-
-    box-shadow: 0 6px 18px rgba(68, 82, 53, 0.18);
-}
-
-.btn:hover {
-    background-color: var(--olive-dark);
-    border-color: var(--olive-dark);
-
-    transform: translateY(-2px);
-
-    box-shadow: 0 10px 24px rgba(68, 82, 53, 0.24);
-}
-
-.btn:active {
-    transform: translateY(0);
-    box-shadow: 0 3px 10px rgba(68, 82, 53, 0.16);
-}
-
-/* Keyboard Accessibility */
-
-.btn:focus-visible,
-.btn-ghost:focus-visible {
-    outline: 2px solid var(--accent-terracotta);
-    outline-offset: 4px;
-}
-
-/* Reduced Motion */
-
-@media (prefers-reduced-motion: reduce) {
-    .btn,
-    .btn-ghost {
-        transition: none;
-    }
-
-    .btn:hover,
-    .btn-ghost:hover {
-        transform: none;
-    }
-}
-
- 
-/* =========================================
-   MAIN BUTTON — ORDER / MENU
-   TIEN COFFEE NATURAL ZEN
-   ========================================= */
-
-.btn {
-    background-color: var(--accent-olive);
-    color: #ffffff;
-    border: 1px solid var(--accent-olive);
-
-    box-shadow: 0 6px 18px rgba(68, 82, 53, 0.18);
-
-    transition:
-        background-color 0.3s ease,
-        border-color 0.3s ease,
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-
-    cursor: pointer;
-}
-
-.btn:hover {
-    background-color: var(--olive-dark);
-    border-color: var(--olive-dark);
-
-    transform: translateY(-2px);
-
-    box-shadow: 0 10px 24px rgba(68, 82, 53, 0.24);
-}
-
-.btn:active {
-    transform: translateY(0);
-    box-shadow: 0 3px 10px rgba(68, 82, 53, 0.16);
-}
-
-/* Keyboard Accessibility */
-.btn:focus-visible {
-    outline
-
-
-      
-/* =========================================
-   GHOST BUTTON — HERO VIDEO
-   ========================================= */
-
-.btn-ghost {
-    border: 1.5px solid rgba(255, 255, 255, 0.65);
-    color: #ffffff;
-    background: rgba(39, 23, 20, 0.18);
-
-    transition:
-        background-color 0.3s ease,
-        border-color 0.3s ease,
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-
-    cursor: pointer;
-}
-
-.btn-ghost:hover {
-    background: rgba(39, 23, 20, 0.45);
-    border-color: #ffffff;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-}
-
-.btn-ghost:active {
-    transform: translateY(0);
-}
-
-/* =========================================
-   MOBILE HERO BUTTONS
-   ========================================= */
-
-@media (max-width: 576px) {
-    .hero-cta {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 12px;
-        width: 100%;
-        max-width: 340px;
-        margin: 0 auto;
-    }
-
-    .hero-cta .btn,
-    .hero-cta .btn-ghost {
-        width: 100%;
-        box-sizing: border-box;
-    }
-}
-
-/* Reduced Motion */
-@media (prefers-reduced-motion: reduce) {
-    .btn-ghost {
-        transition: none;
-    }
-
-    .btn-ghost:hover {
-        transform: none;
-    }
-}
-
-
-
-/* =========================================
-   TIEN COFFEE — NATURAL ZEN BUTTON DESIGN
-========================================= */
-
 /* Common Button Styles */
 .btn,
 .btn-ghost {
@@ -635,18 +449,14 @@ html[lang="ru"] :is(.lang-en, .lang-vi, .lang-ko, .lang-zh) {
 .btn {
     background-color: var(--accent-olive);
     color: #ffffff;
-
     border: 1px solid var(--accent-olive);
-
     box-shadow: 0 6px 18px rgba(68, 82, 53, 0.18);
 }
 
 .btn:hover {
     background-color: var(--olive-dark);
     border-color: var(--olive-dark);
-
     transform: translateY(-2px);
-
     box-shadow: 0 10px 24px rgba(68, 82, 53, 0.24);
 }
 
@@ -659,16 +469,13 @@ html[lang="ru"] :is(.lang-en, .lang-vi, .lang-ko, .lang-zh) {
 .btn-ghost {
     background: rgba(39, 23, 20, 0.35);
     color: #ffffff;
-
     border: 1.5px solid rgba(255, 255, 255, 0.85);
-
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10);
 }
 
 .btn-ghost:hover {
     background: rgba(39, 23, 20, 0.65);
     border-color: #ffffff;
-
     transform: translateY(-2px);
 }
 
@@ -715,7 +522,8 @@ html[lang="ru"] :is(.lang-en, .lang-vi, .lang-ko, .lang-zh) {
     }
 }
 
-        /* ===== Hero ===== */
+/* ===== Hero ===== */
+
         .hero {
             position: relative; text-align: center; color: #fff; overflow: hidden;
             background-color: var(--coffee-black); min-height: 100svh;
