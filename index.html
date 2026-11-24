@@ -69,6 +69,7 @@
     "addressRegion": "Sơn Trà",
     "addressCountry": "VN"
   },
+    
   "hasMap": "https://www.google.com/maps?q=46%20Loseby%2C%20An%20H%E1%BA%A3i%2C%20S%C6%A1n%20Tr%C3%A0%2C%20%C4%90%C3%A0%20N%E1%BA%B5ng",
 "sameAs": [
   "https://instagram.com/tien.coffee.shop",
@@ -561,8 +562,17 @@ html[lang="ru"] :is(.lang-en, .lang-vi, .lang-ko, .lang-zh) {
             border-radius: var(--radius); padding: 16px 20px; max-width: 420px; margin: 0 auto 24px;
             backdrop-filter: blur(6px); text-align: left;
         }
-        .hero-info-box a { display: flex; align-items: center; gap: 10px; color: #F5F2EB; text-decoration: none; font-size: 15px; font-weight: 500; }
+              .hero-info-box a { display: flex; align-items: center; gap: 10px; color: #F5F2EB; text-decoration: none; font-size: 15px; font-weight: 500; }
         .hero-info-box .icon { color: #B9CE8A; width: 1.3em; height: 1.3em; }
+        .hero-hours {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            color: #B9CE8A;
+            font-size: 14px;
+            font-weight: 600;
+            text-align: center;
+        }
         .hero-cta { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
         .scroll-cue {
             position: absolute; bottom: 22px; left: 50%; transform: translateX(-50%);
@@ -571,6 +581,7 @@ html[lang="ru"] :is(.lang-en, .lang-vi, .lang-ko, .lang-zh) {
         @keyframes bob { 0%, 100% { transform: translate(-50%, 0); } 50% { transform: translate(-50%, 8px); } }
 
         /* hero entrance */
+
         .fade-item { opacity: 0; transform: translateY(22px); animation: rise 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
         .fade-item:nth-child(1) { animation-delay: 0.1s; }
         .fade-item:nth-child(2) { animation-delay: 0.22s; }
@@ -1596,6 +1607,7 @@ html[lang="ru"] :is(.lang-en, .lang-vi, .lang-ko, .lang-zh) {
     </section>
 
       <!-- Location -->
+
     <section class="map-section" id="location">
         <div class="container">
             <h2 class="section-title reveal">
@@ -1616,6 +1628,13 @@ html[lang="ru"] :is(.lang-en, .lang-vi, .lang-ko, .lang-zh) {
                 </a>
                 <svg class="icon" aria-hidden="true"><use href="#i-ext"/></svg>
             </p>
+            <p class="map-note reveal" style="color: var(--accent-olive); font-weight: 600;">
+                <span class="lang-en">Open Daily: 07:00 – 21:00</span>
+                <span class="lang-vi">Giờ mở cửa: 07:00 – 21:00 (Hàng ngày)</span>
+                <span class="lang-ko">영업시간: 07:00 – 21:00 (매일 운영)</span>
+                <span class="lang-zh">营业时间：07:00 – 21:00（每日营业）</span>
+                <span class="lang-ru">Ежедневно: с 07:00 до 21:00</span>
+            </p>
             <div class="map-container reveal">
                 <iframe
                     title="Map showing the location of Tien Coffee, 46 Loseby, An Hai, Son Tra, Da Nang"
@@ -1627,6 +1646,7 @@ html[lang="ru"] :is(.lang-en, .lang-vi, .lang-ko, .lang-zh) {
             </div>
         </div>
     </section>
+
 
      <!-- Call to action -->
     <section class="cta-block">
