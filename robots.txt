@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tiencoffeeshop-danang.github.io/coffee-shop/sitemap.xml
