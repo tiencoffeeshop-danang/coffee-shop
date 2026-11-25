@@ -637,7 +637,7 @@ html[lang="ru"] :is(.lang-en, .lang-vi, .lang-ko, .lang-zh) {
        /* ===== Menu ===== */
         .pricing { background: var(--white-card); }
         
-        /* Сетка: на мобильных 1 колонка, на экранах от 860px — 2 ровные колонки */
+       /* Grid: 1 column on mobile, 2 equal columns on screens 860px and wider */
         .menu-wrapper { 
             display: grid; 
             grid-template-columns: 1fr; 
@@ -688,63 +688,64 @@ html[lang="ru"] :is(.lang-en, .lang-vi, .lang-ko, .lang-zh) {
             flex: none;
         }
 
-        .menu-item { margin-bottom: 18px; }
-        .menu-item:last-child { margin-bottom: 0; }
+      .menu-item { margin-bottom: 18px; }
+.menu-item:last-child { margin-bottom: 0; }
 
-        /* Идеальное выравнивание строки заголовка */
-        .menu-header { 
-            display: flex; 
-            align-items: baseline; 
-            gap: 10px; 
-            margin-bottom: 3px; 
-            justify-content: space-between;
-        }
+/* Perfect header row alignment */
+.menu-header { 
+    display: flex; 
+    align-items: baseline; 
+    gap: 8px; 
+    margin-bottom: 3px; 
+    justify-content: space-between;
+}
 
-        /* Настройка шрифтов как в напечатанном макете */
-        .menu-name { 
-            font-family: 'Be Vietnam Pro', sans-serif;
-            font-weight: 600; 
-            font-size: 16px; 
-            color: var(--coffee-dark); 
-            text-align: left; 
-            flex-shrink: 0;
-        }
+/* Font setup matching the print layout */
+.menu-name { 
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 600; 
+    font-size: 16px; 
+    color: var(--coffee-dark); 
+    text-align: left; 
+    min-width: 0;
+    overflow-wrap: break-word;
+}
 
-        .menu-name small { 
-            font-size: 12px; 
-            color: var(--text-muted); 
-            font-weight: 500; 
-        }
+.menu-name small { 
+    font-size: 12px; 
+    color: var(--text-muted); 
+    font-weight: 500; 
+}
 
-        /* Точки теперь не прыгают и стоят ровно по центру текста */
-        .menu-dots { 
-            flex: 1; 
-            border-bottom: 2px dotted #D8D2C4; 
-            height: 2px;
-            align-self: center;
-            min-width: 16px; 
-        }
+/* Dots no longer jump and stay centered with the text */
+.menu-dots { 
+    flex: 1; 
+    border-bottom: 2px dotted #D8D2C4; 
+    height: 2px;
+    align-self: center;
+    min-width: 8px; 
+}
 
-        .menu-price { 
-            font-family: 'Be Vietnam Pro', sans-serif;
-            font-weight: 700; 
-            color: var(--accent-olive); 
-            white-space: nowrap; 
-            font-size: 15.5px; 
-            text-align: right; 
-            flex-shrink: 0;
-        }
+.menu-price { 
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 700; 
+    color: var(--accent-olive); 
+    white-space: nowrap; 
+    font-size: 15.5px; 
+    text-align: right; 
+    flex-shrink: 0;
+}
 
-        .menu-desc { 
-            font-family: 'Be Vietnam Pro', sans-serif;
-            font-size: 13px; 
-            color: var(--text-muted); 
-            font-weight: 400; 
-            text-align: left; 
-            display: block; 
-            line-height: 1.4;
-            margin-top: 2px;
-        }
+.menu-desc { 
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 13px; 
+    color: var(--text-muted); 
+    font-weight: 400; 
+    text-align: left; 
+    display: block; 
+    line-height: 1.4;
+    margin-top: 2px;
+}
 
         /* ===== Location ===== */
         .map-note { text-align: center; margin-bottom: 22px; font-size: 15px; color: var(--text-muted); }
@@ -1708,7 +1709,7 @@ html[lang="ru"] :is(.lang-en, .lang-vi, .lang-ko, .lang-zh) {
     </footer>
 
     <script>
-        // Объявляем функцию синхронизации кнопок
+        // Declare button sync function
         function syncLangButtons() {
             var current = document.documentElement.lang || 'vi';
             document.querySelectorAll('.lang-btn').forEach(function (btn) {
@@ -1718,14 +1719,14 @@ html[lang="ru"] :is(.lang-en, .lang-vi, .lang-ko, .lang-zh) {
             });
         }
 
-        // Переключение языка при клике
+        // Toggle language on click
         function setLang(lang) {
             document.documentElement.lang = lang;
             try { localStorage.setItem('tc-lang', lang); } catch (e) {}
             syncLangButtons();
         }
 
-        // Инициализация сохраненного языка (ИСПРАВЛЕНО: добавлена поддержка ko, zh, ru)
+        // Initialize saved language (FIXED: added support for ko, zh, ru)
         (function () {
             var saved = null;
             var supported = ['en', 'vi', 'ko', 'zh', 'ru'];
@@ -1738,7 +1739,7 @@ html[lang="ru"] :is(.lang-en, .lang-vi, .lang-ko, .lang-zh) {
             syncLangButtons();
         })();
 
-        // Изменение прозрачности шапки при скролле
+        // Update header transparency on scroll
         window.addEventListener('scroll', function () {
             var topbar = document.getElementById('topbar');
             if (topbar) {
@@ -1746,7 +1747,7 @@ html[lang="ru"] :is(.lang-en, .lang-vi, .lang-ko, .lang-zh) {
             }
         }, { passive: true });
 
-        // Анимации появления элементов при прокрутке (Scroll-reveal)
+        // Element scroll-reveal animations
         var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
         if ('IntersectionObserver' in window && !reduceMotion) {
             var observer = new IntersectionObserver(function (entries) {
@@ -1763,7 +1764,7 @@ html[lang="ru"] :is(.lang-en, .lang-vi, .lang-ko, .lang-zh) {
             document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-visible'); });
         }
 
-        // Автоматическая установка текущего года в футере
+        // Auto-update current year in footer
         var yearEl = document.getElementById('year');
         if (yearEl) {
             yearEl.textContent = new Date().getFullYear();
