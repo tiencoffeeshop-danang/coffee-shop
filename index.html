@@ -60,8 +60,8 @@ content="Tien Coffee — Garden Cafe & Koi Pond in Da Nang">
   "url": "https://tiencoffeeshop-danang.github.io/coffee-shop/",
   "telephone": "+84342697551",
   "priceRange": "$",
+json
   "servesCuisine": ["Vietnamese Coffee", "Coffee", "Smoothies", "Fruit Tea"],
- json
   "image": [
     "logo.jpg",
     "koi.jpg",
@@ -1807,5 +1807,29 @@ html[lang="ru"] :is(.lang-en, .lang-vi, .lang-ko, .lang-zh) {
             yearEl.textContent = new Date().getFullYear();
         }
     </script>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const videos = document.querySelectorAll("video[autoplay]");
+  videos.forEach((video) => {
+    video.muted = true;
+    video.playsInline = true;
+    const playPromise = video.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {
+        // Если iOS заблокировал автоплей (например, Low Power Mode),
+        // запускаем при первом касании экрана
+        const startVideo = () => {
+          video.play();
+          document.removeEventListener("touchstart", startVideo);
+          document.removeEventListener("click", startVideo);
+        };
+        document.addEventListener("touchstart", startVideo, { once: true });
+        document.addEventListener("click", startVideo, { once: true });
+      });
+    }
+  });
+});
+</script>
+
 </body>
 </html>
